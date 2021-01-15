@@ -1,0 +1,2646 @@
+﻿<!doctype html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="編碼設置一目了然。">
+
+  <title>編碼設定快速參考</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-ultra.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-super.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-black.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-bold.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.eot" type="font/eot">
+  <link data-react-helmet="true" rel="preload" as="font" href="https://files.brightcove.com/fonts/balto/baltoweb-medium.woff" type="font/woff">
+  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
+  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
+  <link rel="stylesheet" href="/assets/css/local.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
+  <script src="/assets/js/sajari-head.js"></script>
+</head>
+
+<body class="body">
+
+<header>
+  <div class="div-header">
+    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="產品標誌" style="max-height: 100px;max-width: 232px;"/></a>
+<!-- GTranslate: https://gtranslate.io/ -->
+<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
+
+<script>
+/* <![CDATA[ */
+function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
+/* ]]> */
+</script>
+
+    <select id="site_select" class="bcls-select" style="margin-right: 1rem;">
+      <option value="">其他布萊特灣文件</option>
+      
+        
+          <option value="https://support.brightcove.com">文件首頁</option>
+        
+      
+        
+          <option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
+        
+      
+        
+          <option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
+        
+      
+        
+          <option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
+        
+      
+        
+          <option value="https://engage.support.brightcove.com">布萊特灣參與</option>
+        
+      
+        
+          <option value="https://live.support.brightcove.com">Brightcove Live</option>
+        
+      
+        
+          <option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
+        
+      
+        
+          <option value="https://ssai.support.brightcove.com">布萊特灣</option>
+        
+      
+        
+          <option value="https://social.support.brightcove.com">布萊特灣社會</option>
+        
+      
+        
+          <option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
+        
+      
+        
+          <option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
+        
+      
+        
+          <option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
+        
+      
+        
+          <option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
+        
+      
+        
+          <option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
+        
+      
+        
+          <option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
+        
+      
+        
+          <option value="https://zencoder.support.brightcove.com">Zencoder</option>
+        
+      
+    </select>
+
+
+    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
+    
+  </div>
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb arr-right">
+      
+      <li class="breadcrumb-item"><a href="/">首頁</a></li>
+      
+      
+      
+      <li class="breadcrumb-item"><a href="/encoding-settings/">編碼設定</a></li>
+      
+      <li class="breadcrumb-item active" aria-current="page">編碼設定快速參考</li>
+    </ol>
+  </nav>
+</header>
+<div class="container">
+    <div class="row">
+      <div class="col-sm-3 left-side-bar">
+        <nav class="sidenav" id="side_nav">
+          
+            
+            <h5><a href="/index.html">首頁</a></h5>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/getting-started/index.html">開始使<strong>用 + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/getting-started/overview-zencoder.html">概述</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/quick-start-zencoder.html">快速入門</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/getting-api-key.html">取得 API 金鑰</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/output-settings.html">輸出設定</a></li>
+                  
+                
+                  
+                    <li><a href="/getting-started/creating-multiple-outputs.html">建立多個輸出</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/general-information/index.html">一般資訊<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/general-information/faq-basics.html">基本概念</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-codecs-and-formats.html">轉碼器和格式</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-encoding.html">編碼</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-file-transfers.html">檔案傳輸</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-zencoder-pricing.html">齊編碼器定價</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/faq-rate-limiting.html">速率限制</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html">支援的視訊和音訊格式</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/overview-context-aware-encoding.html">概述：上下文感知編碼</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">視訊完成時收到通知</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Zencoder 如何在上傳失敗時儲存檔案</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/using-zencoder-s3.html">使用 ZenCoder 與 S3 搭配使用</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/using-zencoder-azure.html">在 Azure 中使用贊編碼器</a></li>
+                  
+                
+                  
+                    <li><a href="/general-information/using-zencoder-google-cloud-platform.html">使用 Zencoder 與谷歌雲存儲</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/references/index.html">參考資料<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/references/reference.html">API 參考</a></li>
+                  
+                
+                  
+                    <li><a href="/references/known-issues.html">已知問題</a></li>
+                  
+                
+                  
+                    <li><a href="/references/release-notes.html">產品更新</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-settings/index.html">編碼設定<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general/index.html">一般設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-job.html">工作設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">一般輸出設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general/cae-settings.html">CAE 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">條件輸出設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general/encoding-settings-notifications.html">通知設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/general-audio-video/index.html">音訊/視訊設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">音訊設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">音訊處理設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video.html">視訊設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html">視訊處理設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">廣播設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">影格速率設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">匯率控制設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html">解析度設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html">分段串流設定</a></li>
+                        
+                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html">轉換設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/formats-codecs/index.html">格式和轉碼器設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">格式與轉碼器設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">AAC 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">FLV 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">HDR 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">H.264 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html">MP4 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html">VP6 設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/assets/index.html">媒體資產設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">註解設定</a></li>
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">剪輯片段設定</a></li>
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-thumbnails.html">縮圖設定</a></li>
+                        
+                        <li><a href="/encoding-settings/assets/encoding-settings-watermarks.html">浮水印設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/content-protection/index.html">內容防護設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">加密設定</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">解密設定</a></li>
+                        
+                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">DRM 設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/encoding-settings/sources-destinations/index.html">來源/目的地設定<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html">S3 設定</a></li>
+                        
+                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">阿斯佩拉設定</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/encoding-guides/index.html">編碼指南<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">音訊對應指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/as11-mxf.html">作為 11 毫米 x F 指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/avc-intra-guide.html">AVC 內部指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/cae-guide.html">CAE 指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html">翻譯指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH 串流和播放清單</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/h264-advanced-guide.html">H.264 進階指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/hdr10-video-output.html">支援的 HDR 視訊格式</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/hevch265-guide.html">HEVC/H.265 指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/highwinds-smil.html">高風 SMIL 指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/html5-encoding.html">HTML5 編碼</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HLS 串流與播放清單</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">使用分散式 MP4 的 HLS </a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/iosmobile-encoding.html">Io/行動裝置編碼指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/microsoft-smooth-streaming.html">微軟流暢的串流</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html">以品質為基礎的串流編碼模式</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/vp6-advanced-guide.html">VP6 進階指南</a></li>
+                  
+                
+                  
+                    <li><a href="/encoding-guides/vp9-guide.html">VP9 指南</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">錯誤/疑難排解<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/error-troubleshooting/problems.html">常見問題</a></li>
+                  
+                
+                  
+                    <li><a href="/error-troubleshooting/region-outages.html">區域中斷</a></li>
+                  
+                
+                  
+                    <li><a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html">重試失敗工作的時機</a></li>
+                  
+                
+                  
+                    <li class="submenu-header">
+                      <a href="/error-troubleshooting/error-codes/index.html">錯誤代碼<strong> + </strong></a>
+                      <ul class="sidenav-subsubmenu" style="display:none;">
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkA 大型儲存空間檔案錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">總和檢查符合錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">尺寸標註小錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">下載存取權限</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">下載失敗錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">下載時間錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">檔案外部建立者</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">檔案永久移動程式錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">不準確的持續時間錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">與動態設定檔不相容錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">找到輸入檔案</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">無效存取金鑰存取器錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">無效的音訊設定伺服器錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">無效的解碼器組合錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">下載無效的檔案錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">無效密碼設定伺服器錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">無效的檔案路徑</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">無效格式化程式碼驗證</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">無效的影格速率錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">使用者名稱無效密碼錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">無效的視訊標準錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">無效的視訊設定伺服器錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-nomediaerror.html">無媒體錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html">快速時間參考錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html">遠端伺服器問題錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html">驗證失敗錯誤錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html">RTMP 最大流量已設定</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html">RTMP串流名稱已準備好使用</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html">S3 代理程式創建者</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-segmentingerror.html">分段錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html">跳過來源錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-thumbnailerror.html">縮圖錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-transcodingerror.html">轉碼錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html">移轉። 無效群組清單錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html">轉移። 無效的莊家</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html">截斷檔案錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html">無法建立動態設定檔錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html">下載問題</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html">所有人都可以看到</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html">圖層結果</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html">建議的後代結果</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html">受到的結果錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html">關於載入問題的問題</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html">所有結果</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html">無法讀取檔案錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html">不支援的編碼器</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html">不支援的編碼錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html">不支援密碼錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html">不支援的轉換碼組合錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html">上傳存取權限</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html">上傳失敗錯誤</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html">上傳伺服器無法建立者</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html">上傳時間</a></li>
+                        
+                        <li><a href="/error-troubleshooting/error-codes/error-workertimeouterror.html">工作者時間錯誤</a></li>
+                        
+                      </ul>
+                    </li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/integration/index.html">整合<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/integration/faq-integration-libraries.html">整合程式庫</a></li>
+                  
+                
+                  
+                    <li><a href="/integration/100-integration-reliability.html">100% 整合可靠性</a></li>
+                  
+                
+                  
+                    <li><a href="/integration/test-jobs-and-integration-mode.html">測試工作和整合模式</a></li>
+                  
+                
+                  
+                    <li><a href="/integration/using-read-only-api-keys.html">使用唯讀 API 金鑰</a></li>
+                  
+                
+              </ul>
+            
+          
+            
+              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
+              <ul class="sidenav-submenu" style="display:none;">
+                
+                  
+                    <li><a href="/support/brightcove-answer.html">布萊特灣答案</a></li>
+                  
+                
+                  
+                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
+                  
+                
+                  
+                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
+                  
+                
+                  
+                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
+                  
+                
+              </ul>
+            
+          
+      </nav>
+    </div>
+    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
+  <!-- bootstrap layout -->
+
+<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
+
+<!-- search bar -->
+<div id="nav-search-box" style="margin-top: 1rem;"></div>
+<!-- in-page navigation for narrow screens -->
+<details class="centered-inpage-nav" id="centered_inpage_nav">
+  <summary><h6 class="toc">頁面內容</h6></summary>
+  <nav id="centered_toc"></nav>
+  <ul id="centered_in_page_toc" class="list-none"></ul>
+</details>
+<!-- open in new tab/window -->
+<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
+
+
+
+  
+    
+
+
+<style>
+  .bcls-table td>a>code {
+    font-size: .9rem;
+    white-space: nowrap;
+  }
+</style>
+<article class="bcls-article">
+  <h1>編碼設定</h1>
+  <summary>本主題提供所有編碼設定的表格，其中包含每個設定詳細指南的連結。</summary>
+  <section class="bcls-section">
+    <h2 id="job">工作</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#api_key"><code translate="No">api_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>您的Zencoder帳戶的API密鑰。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#dynamic_profile_options"><code translate="No">dynamic_profile_options</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>使用CAE，可以為每個輸入文件動態更改輸出數量和此類輸出的參數。動態設定定義應該建立轉譯的方式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#generate_dynamic_profile"><code translate="No">generate_dynamic_profile</code></a></td>
+          <td>假的</td>
+          <td>使用CAE，可以為每個輸入文件動態更改輸出數量和此類輸出的參數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#input"><code translate="No">input</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一個 HTTP，S3，雲文件，GCS，FTP，FTPS，SFTP，Azure，或阿斯佩拉的 URL，我們可以下載文件轉碼。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>輸出設置的數組或散列。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#region"><code translate="No">region</code></a></td>
+          <td>我們</td>
+          <td>處理檔案的區域：美國、歐洲、亞洲或澳洲。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#test"><code translate="No">test</code></a></td>
+          <td>假的</td>
+          <td>啟用工作的測試模式 (「整合模式」)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#private"><code translate="No">private</code></a></td>
+          <td>假的</td>
+          <td>為工作啟用隱私模式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#download_connections"><code translate="No">download_connections</code></a></td>
+          <td>5</td>
+          <td>利用多個同時連線進行下載加速 (在某些情況下)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#pass_through"><code translate="No">pass_through</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>與該作業一起存儲的可選信息。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#mock"><code translate="No">mock</code></a></td>
+          <td>假的</td>
+          <td>傳送模擬的工作請求。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#grouping"><code translate="No">grouping</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>此工作的報表群組。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#aspera_transfer_policy"><code translate="No">aspera_transfer_policy</code></a></td>
+          <td>公平</td>
+          <td>如何配置 Aspera 檔案傳輸的可用頻寬。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#transfer_minimum_rate"><code translate="No">transfer_minimum_rate</code></a></td>
+          <td>+1000</td>
+          <td>以 Kbps 為單位的資料傳輸最低限度的目標速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#transfer_maximum_rate"><code translate="No">transfer_maximum_rate</code></a></td>
+          <td>+250000</td>
+          <td>資料傳輸上限的 Kbps 目標速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#expected_md5_checksum"><code translate="No">expected_md5_checksum</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>輸入檔案的預期總和檢查碼。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-job.html#credentials"><code translate="No">credentials</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以暱稱參考已儲存的認證。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="general-output-settings">常規輸出設置</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#type"><code translate="No">type</code></a></td>
+          <td>標準</td>
+          <td>要輸出的檔案類型。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#label"><code translate="No">label</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>此輸出的選擇性標籤。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#dynamic_profile_rendition"><code translate="No">dynamic_profile_rendition</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>dynamic_profile_rendition 設定指定此輸出應使用動態產生的 CAE 描述檔中的設定，特別是要使用設定檔的設定。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#url"><code translate="No">url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一個 S3，雲文件，GCS，FTP，FTPS，SFTP，SFTP，亞斯佩拉，Azure，HTTP，或 RTMP 網址，我們將放在轉碼的文件。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#secondary_url"><code translate="No">secondary_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一個 S3，雲文件，GCS，FTP，FTPS，SFTP，HTTP，RTMP，阿斯佩拉，或 Azure 的 URL，我們將放在轉碼的文件。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#base_url"><code translate="No">base_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一個基本的 S3，雲文件，GCS，FTP，FTPS，SFTP，Azure，或阿斯佩拉目錄 URL，我們將把轉碼的文件，沒有文件名。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#filename"><code translate="No">filename</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>完成檔案的檔案名稱。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package_filename"><code translate="No">package_filename</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>打包輸出的文件名。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package_format"><code translate="No">package_format</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用於輸出檔案的 ZIP/封裝格式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#device_profile"><code translate="No">device_profile</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用於行動裝置相容性的裝置描述檔。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#strict"><code translate="No">strict</code></a></td>
+          <td>假的</td>
+          <td>啟用嚴謹模式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#skip_video"><code translate="No">skip_video</code></a></td>
+          <td>假的</td>
+          <td>請勿輸出視訊軌道。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#skip_audio"><code translate="No">skip_audio</code></a></td>
+          <td>假的</td>
+          <td>請勿輸出音軌。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#source"><code translate="No">source</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>參考另一個工作上的標籤，並使用該輸出建立的視訊進行處理，而不是輸入檔案。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#credentials"><code translate="No">credentials</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以暱稱參考已儲存的認證。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#generate_md5_checksum"><code translate="No">generate_md5_checksum</code></a></td>
+          <td>假的</td>
+          <td>生成輸出文件的 MD5 校驗和。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#parallel_upload_limit"><code translate="No">parallel_upload_limit</code></a></td>
+          <td>S3為30，其他所有目的地為10。</td>
+          <td>嘗試同時上傳的最大次數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#headers"><code translate="No">headers</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>當我們上傳文件時與文件一起發送的HTTP標頭。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="cae-settings">CAE 設定</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_renditions"><code translate="No">min_renditions</code></a></td>
+          <td>1</td>
+          <td>生成的最小演繹數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_renditions"><code translate="No">The maximum number of renditions to generate</code></a></td>
+          <td>8</td>
+          <td>生成的最大演繹數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_resolution"><code translate="No">min_resolution</code></a></td>
+          <td>192x108</td>
+          <td>梯子要考慮的最小分辨率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_resolution"><code translate="No">max_resolution</code></a></td>
+          <td>來源解析度</td>
+          <td>階梯要考量的最大解析度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_frame_rate"><code translate="No">max_frame_rate</code></a></td>
+          <td>+30</td>
+          <td>可以使用的最大影格速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#keyframe_rate"><code translate="No">keyframe_rate</code></a></td>
+          <td>+0.5</td>
+          <td>關鍵影格速率。這個值可以是 0.5 或 1。若為啟用 SSAI 的內容，此值必須為 1。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#fixed_frame_rate"><code translate="No">fixed_frame_rate</code></a></td>
+          <td>真正</td>
+          <td>指示產生器在所有轉譯中使用相同的影格速率。如果為 false，則以低於 360p 解析度的 H.264 基準描述檔轉譯將會被指定為一半的影格速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_bitrate"><code translate="No">min_bitrate</code></a></td>
+          <td>200</td>
+          <td>可以使用的最小位元速率 [kbps]。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_bitrate"><code translate="No">max_bitrate</code></a></td>
+          <td>+15000</td>
+          <td>可以使用的最大位元速率 [kbps]。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_first_rendition_bitrate"><code translate="No">max_first_rendition_bitrate</code></a></td>
+          <td>400</td>
+          <td>可用於第一次轉譯的最大位元速率 [kbps]。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#min_granularity"><code translate="No">min_granularity</code></a></td>
+          <td>+30</td>
+          <td>轉譯之間位元速率的最小相對變更。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#max_granularity"><code translate="No">max_granularity</code></a></td>
+          <td>+90</td>
+          <td>轉譯之間位元速率的最大相對變更。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#video_codec"><code translate="No">video_codec</code></a></td>
+          <td>h264</td>
+          <td>要使用的視訊轉碼器。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#bitrate_cap_to_bitrate_ratio"><code translate="No">bitrate_cap_to_bitrate_ratio</code></a></td>
+          <td>+1.3</td>
+          <td>用於 VBR 編碼的最大位元速率與平均位元速率的比率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#buffer_size_to_bitrate_ratio"><code translate="No">buffer_size_to_bitrate_ratio</code></a></td>
+          <td>+2.0</td>
+          <td>用於 VBR 編碼的解碼器緩衝區大小與平均位元率的比率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#bitrate_cap_offset"><code translate="No">bitrate_cap_offset</code></a></td>
+          <td>+64</td>
+          <td>計算最大位元速率時增加常數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#buffer_size_offset"><code translate="No">buffer_size_offset</code></a></td>
+          <td>+85</td>
+          <td>計算 VBV 緩衝區大小時增加的常數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#rtmp_keep_alive"><code translate="No">quality_rate_tune</code></a></td>
+          <td>0</td>
+          <td>品質與速率調整參數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#select_baseline_profile_configuration"><code translate="No">select_baseline_profile_configuration</code></a></td>
+          <td>真正</td>
+          <td>縱斷面中使用的至少一個節目將是基準線縱斷面。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/cae-settings.html#video_configurations"><code translate="No">video_configurations</code></a></td>
+          <td>
+            <span class="none">沒有</span>
+          </td>
+          <td>描述解析度、影格速率和相關的轉碼器設定的結構陣列，應優先或強制產生為 CAE 編碼的一部分。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Format_and_Codecs">格式與轉碼器</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#format"><code translate="No">format</code></a></td>
+          <td>由輸出文件名然後由視頻或音頻編解碼器確定。否則：mp4（用於標準輸出）； ts（用於分段輸出）。</td>
+          <td>要使用的輸出格式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#video_codec"><code translate="No">video_codec</code></a></td>
+          <td>由格式，配置文件或<a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#audio_codec"><code translate="No">audio_codec</code></a>。 h264（如果未提供）。</td>
+          <td>要使用的視訊轉碼器。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#audio_codec"><code translate="No">audio_codec</code></a></td>
+          <td>由格式，配置文件或<a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html#video_codec"><code translate="No">video_codec</code></a>。 AAC（如果未提供）。</td>
+          <td>要使用的音頻編解碼器。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="resolution">解析度</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#size"><code translate="No">size</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>輸出視訊的解析度 (WxH，以像素為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#width"><code translate="No">width</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>輸出視訊的最大寬度 (以像素為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#height"><code translate="No">height</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>輸出視訊的最大高度 (以像素為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#upscale"><code translate="No">upscale</code></a></td>
+          <td>假的</td>
+          <td>如果輸入小於目標輸出解析度，則升頻輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#aspect_mode"><code translate="No">aspect_mode</code></a></td>
+          <td>保留</td>
+          <td>當輸入文件的縱橫比與目標寬度/高度縱橫比不匹配時該怎麼辦。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#sample_aspect_ratio"><code translate="No">sample_aspect_ratio</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用於輸出視頻的樣本（像素）長寬比。大小，寬度，高度和<code translate="No">aspect_mode</code>模式選項均指編碼像素尺寸，而不是顯示尺寸。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html#force_interlace_headers"><code translate="No">force_interlace_headers</code></a></td>
+          <td><span class="none">假</span></td>
+          <td>一些解碼器要求隔行掃描的內容，但是可以播放逐行掃描的內容。此設置會將“隔行掃描”標頭添加到漸進式內容的元數據中，以使其看起來像實際上是隔行掃描的。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Rate_Control">匯率控制</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#quality"><code translate="No">quality</code></a></td>
+          <td>3</td>
+          <td>自動選取符合目標視覺品質的最佳視訊位元速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#video_bitrate"><code translate="No">video_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以 kbps 為單位的目標視訊位元速率。如果您選取品質設定，則不需要，除非您要以特定位元速率為目標。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_quality"><code translate="No">audio_quality</code></a></td>
+          <td>3</td>
+          <td>自動選擇最佳音訊位元率以符合目標音質。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_bitrate"><code translate="No">audio_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以 kbps 為單位的目標音訊位元率。如果選擇一個，則不需要<code translate="No">audio_quality</code>設置，除非您要指定特定的比特率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#max_video_bitrate"><code translate="No">max_video_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>最大平均位元速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#speed"><code translate="No">speed</code></a></td>
+          <td>3</td>
+          <td>目標轉碼速度。較慢的編碼通常允許更高級的壓縮。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#decoder_bitrate_cap"><code translate="No">decoder_bitrate_cap</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提供給解碼器緩衝區的最大位元率。通常用於旨在流式傳輸的視頻或用於定位特定設備的視頻（例如，<code translate="No">Blu-Ray</code>）。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#decoder_buffer_size"> <code translate="No">decoder_buffer_size</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>解碼器緩衝區的大小，與<code translate="No">bitrate_cap</code>。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#one_pass"><code translate="No">one_pass</code></a></td>
+          <td>假的</td>
+          <td>強制單次編碼。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html#audio_constant_bitrate"><code translate="No">audio_constant_bitrate</code></a></td>
+          <td>假的</td>
+          <td>如果可能的話，啟用固定位元速率模式。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Frame_Rate">影格速率</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#frame_rate"><code translate="No">frame_rate</code></a></td>
+          <td>原始（輸入）幀速率。</td>
+          <td>要使用的影格速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#max_frame_rate"><code translate="No">max_frame_rate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要使用的最大影格速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#decimate"><code translate="No">decimate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>通過除數減少輸入幀速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#keyframe_interval"><code translate="No">keyframe_interval</code></a></td>
+          <td>250</td>
+          <td>每個關鍵影格之間的最大影格數目。對於 H.264 視訊，關鍵影格為 IDR 影格。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#keyframe_rate"><code translate="No">keyframe_rate</code></a></td>
+          <td><code translate="No">keyframe_interval</code>一百五十</td>
+          <td>每秒的關鍵影格數目。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#fixed_keyframe_interval"><code translate="No">fixed_keyframe_interval</code></a></td>
+          <td>假的</td>
+          <td>啟用固定關鍵影格間隔模式 (僅限 VP6、VP8、VP9 和 H.264)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#forced_keyframe_interval"><code translate="No">forced_keyframe_interval</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以指定的間隔強制關鍵影格 (僅限 H.264)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#forced_keyframe_rate"><code translate="No">forced_keyframe_rate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定每秒的關鍵影格數目，並考慮影格速率 (僅限 H.264)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#generate_frame_index"><code translate="No">generate_frame_index</code></a></td>
+          <td>假的</td>
+          <td>產生視訊影格索引檔案。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#frame_index_filename"><code translate="No">frame_index_filename</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>在以下情況下覆蓋幀索引的默認文件名<a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html#generate_frame_index"><code translate="No">generate_frame_index</code></a>已啟用。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Video">視訊</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_reference_frames"><code translate="No">video_reference_frames</code></a></td>
+          <td>3</td>
+          <td>要使用的一些參考框架（H.264，HEVC）。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_codec_profile"><code translate="No">video_codec_profile</code></a></td>
+          <td>H.264：基線，HEVC：主要，VP9：0</td>
+          <td>要使用的視訊轉碼器設定檔 (H.264、HEVC、VP9)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_codec_level"><code translate="No">video_codec_level</code></a></td>
+          <td>使用基於輸出視頻的水平圖自動計算。看到<a href="http://en.wikipedia.org/wiki/H.264#Levels"><code translate="No">H.264-levels</code></a>，<a href=" http://en.wikipedia.org/wiki/High_Efficiency_Video_Coding#Tiers_and_levels"><code translate="No">HEVC-levels</code></a></td>
+          <td>要使用的視訊轉碼器層級 (H.264、HEVC)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#video_bframes"> <code translate="No">video_bframes</code></a></td>
+          <td>0</td>
+          <td>連續 B 影格的最大數目 (H.264, HEVC)</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video.html#color_metadata"><code translate="No">color_metadata</code></a></td>
+          <td>保留</td>
+          <td>保留或捨棄輸出視訊中輸入的色彩中繼資料資訊。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Audio">音訊</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_sample_rate"><code translate="No">audio_sample_rate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>音訊取樣率 (以 Hz 為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#max_audio_sample_rate"><code translate="No">max_audio_sample_rate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>最大音訊取樣率 (以 Hz 為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_channels"><code translate="No">audio_channels</code></a></td>
+          <td>如果原始文件是mono，則為1；否則為1。否則2。</td>
+          <td>音訊頻道數量：1 或 2.</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_bit_depth"><code translate="No">audio_bit_depth</code></a></td>
+          <td>+16</td>
+          <td>每個樣本的位元數：16、24、32。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#audio_language"><code translate="No">audio_language</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>說明音軌的語言。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#input_audio_channels"><code translate="No">input_audio_channels</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定輸入音訊軌道至頻道配置。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html#output_audio_channels"><code translate="No">output_audio_channels</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定輸出音訊頻道佈局。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Thumbnails">縮圖</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#thumbnails"><code translate="No">thumbnails</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>擷取指定視訊的縮圖。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#label"><code translate="No">label</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用於識別每組縮圖群組的標籤。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#format"><code translate="No">format</code></a></td>
+          <td>PNG</td>
+          <td>縮略圖的格式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#number"><code translate="No">number</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一些縮圖，間距均勻。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#start_at_first_frame"><code translate="No">start_at_first_frame</code></a></td>
+          <td>假的</td>
+          <td>從第一個影格開始產生縮圖。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#interval"><code translate="No">interval</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以均勻的間隔（以秒為單位）拍攝縮略圖。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#interval_in_frames"><code translate="No">interval_in_frames</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以均勻的間隔以幀為單位拍攝縮略圖。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#times"><code translate="No">times</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>擷取縮圖的次數，以秒為單位。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#aspect_mode"><code translate="No">aspect_mode</code></a></td>
+          <td>保留</td>
+          <td>如何處理與輸入文件的縱橫比不同的縮略圖寬度/高度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#size"><code translate="No">size</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>縮略圖分辨率為<code translate="No">WxH</code>。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#width"><code translate="No">width</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>縮圖的最大寬度 (以像素為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#height"><code translate="No">height</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>縮圖的最大高度 (以像素為單位)。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#base_url"><code translate="No">base_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>一個基本的 S3，雲文件，GCS，FTP，FTPS 或 SFTP 目錄 URL，我們將在其中放置縮略圖，沒有文件名。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#prefix"><code translate="No">prefix</code></a></td>
+          <td>框架</td>
+          <td>縮圖檔案名稱的前置詞。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#filename"><code translate="No">filename</code></a></td>
+          <td>框架</td>
+          <td>內插縮圖檔案名稱。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#public"><code translate="No">public</code></a></td>
+          <td>假的</td>
+          <td>使輸出在 S3 上公開可讀。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#access_control"><code translate="No">access_control</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>傳送至 S3 的檔案的精細存取控制規則。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#grantee"><code translate="No">grantee</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定精細 S3 存取控制權限的受權者。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#permission"><code translate="No">permission</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>在使用細微的存取控制時，設定受權者的權限。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#rss"><code translate="No">rrs</code></a></td>
+          <td>假的</td>
+          <td>亞馬遜 S3 的減少備援儲存。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#headers"><code translate="No">headers</code></a></td>
+          <td><span class="none">無</span></td>
+          <td><code translate="No">HTTP headers</code>在我們上傳縮略圖時發送。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#credentials"><code translate="No">credentials</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>以暱稱參考已儲存的認證。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-thumbnails.html#parallel_upload_limit"><code translate="No">parallel_upload_limit</code></a></td>
+          <td>S3為30，其他所有目的地為10。</td>
+          <td>嘗試同時上傳的最大次數。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Watermarks">浮水印</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#watermarks"><code translate="No">watermarks</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>在輸出視訊中新增一或多個浮水印。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#url"><code translate="No">url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用作水印的遠程圖像文件的URL。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#x"><code translate="No">x</code></a></td>
+          <td>-+10</td>
+          <td>在哪裡放置浮水印，在 x 軸上。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#y"><code translate="No">y</code></a></td>
+          <td>-+10</td>
+          <td>放置浮水印的位置，在 y 軸上。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#width"><code translate="No">width</code></a></td>
+          <td>縮放到<a href="/encoding-settings/assets/encoding-settings-watermarks.html#height">高度</a>，或原始圖像寬度。</td>
+          <td>浮水印的縮放寬度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#height"><code translate="No">height</code></a></td>
+          <td>縮放到<a href="/encoding-settings/assets/encoding-settings-watermarks.html#width">寬度</a>或原始圖像高度。</td>
+          <td>浮水印的縮放高度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#origin"><code translate="No">origin</code></a></td>
+          <td>內容</td>
+          <td>輸出的哪個部分以基於浮水印位置。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-watermarks.html#opacity"><code translate="No">opacity</code></a></td>
+          <td>+1.0</td>
+          <td>使浮水印透明。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Captions">字幕</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-captions.html#caption_url"><code translate="No">caption_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要包含在輸出中的 SCC、DFXP 或 SAMI 標題檔案的 URL。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/assets/encoding-settings-captions.html#skip_captions"><code translate="No">skip_captions</code></a></td>
+          <td>假的</td>
+          <td>不要在輸出文件中添加標題或將標題傳遞給輸出文件。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Video_Processing">視訊處理</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#rotate"><code translate="No">rotate</code></a></td>
+          <td>自動偵測</td>
+          <td>旋轉視訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#deinterlace"><code translate="No">deinterlace</code></a></td>
+          <td>偵測</td>
+          <td>去交錯輸入視訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#sharpen"><code translate="No">sharpen</code></a></td>
+          <td>假的</td>
+          <td>套用銳利化濾鏡。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#denoise"><code translate="No">denoise</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>套用去除濾鏡。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#autolevel"><code translate="No">autolevel</code></a></td>
+          <td>假的</td>
+          <td>套用色彩自動層級過濾條件。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html#deblock"><code translate="No">deblock</code></a></td>
+          <td>假的</td>
+          <td>套用解除區塊篩選器。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Audio_Processing">音訊處理</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_gain"><code translate="No">audio_gain</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將增益量應用於音頻，以 dB 為單位。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_normalize"><code translate="No">audio_normalize</code></a></td>
+          <td>假的</td>
+          <td>將音頻標準化為0dB。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_pre_normalize"><code translate="No">audio_pre_normalize</code></a></td>
+          <td>假的</td>
+          <td>在應用擴展或壓縮效果之前，請對音頻進行標準化。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_post_normalize"><code translate="No">audio_post_normalize</code></a></td>
+          <td>假的</td>
+          <td>應用擴展或壓縮效果後，對音頻進行標準化。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_bass"><code translate="No">audio_bass</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>增加或減少音訊中的低音量。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_treble"><code translate="No">audio_treble</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>增加或減少音訊中的高音量。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_highpass"><code translate="No">audio_highpass</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將高通濾波器套用至音訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_lowpass"><code translate="No">audio_lowpass</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將低通濾波器套用至音訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_compression_ratio"><code translate="No">audio_compression_ratio</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>壓縮音訊的動態範圍。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_compression_threshold"><code translate="No">audio_compression_threshold</code></a></td>
+          <td>-+20</td>
+          <td>壓縮音訊的動態範圍。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio-expansion-ratio"><code translate="No">audio_expansion_ratio</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>擴展音訊的動態範圍。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_expansion_threshold"><code translate="No">audio_expansion_threshold</code></a></td>
+          <td>-+35</td>
+          <td>擴展音訊的動態範圍。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_fade"><code translate="No">audio_fade</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將淡入和淡出效果套用至音訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_fade_in"><code translate="No">audio_fade_in</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將淡入效果套用至音訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_loudness_level"><code translate="No">audio_loudness_level</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>調整音訊的音量等級。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html#audio_karaoke_mode"><code translate="No">audio_karaoke_mode</code></a></td>
+          <td>假的</td>
+          <td>在音訊上套用卡拉 OK 效果。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Clips">短片</h2>
+  </section>
+  <table class="bcls-table">
+    <thead class="bcls-table__head">
+      <tr>
+        <th>設定</th>
+        <th>預設</th>
+        <th>描述</th>
+      </tr>
+    </thead>
+    <tbody class="bcls-table__body">
+      <tr>
+        <td><a href="/encoding-settings/assets/encoding-settings-clips.html#start_clip"><code translate="No">start_clip</code></a></td>
+        <td><span class="none">無</span></td>
+        <td>透過設定自訂開始時間，僅對輸入檔案的一部分進行編碼。</td>
+      </tr>
+      <tr>
+        <td><a href="/encoding-settings/assets/encoding-settings-clips.html#clip_length"><code translate="No">clip_length</code></a></td>
+        <td><span class="none">無</span></td>
+        <td>透過設定自訂剪輯片段長度，僅對輸入檔案的一部分進行編碼。</td>
+      </tr>
+    </tbody>
+  </table>
+  <section class="bcls-section">
+    <h2 id="S3_Settings">S3 設定</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#public"><code translate="No">public</code></a></td>
+          <td>假的</td>
+          <td>使輸出在 S3 上公開可讀。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#rrs"><code translate="No">rrs</code></a></td>
+          <td>假的</td>
+          <td>亞馬遜 S3 的減少備援儲存。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#access_control"><code translate="No">access_control</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>傳送至 S3 的檔案的精細存取控制規則。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#grantee"><code translate="No">grantee</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定精細 S3 存取控制權限的受權者。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#permission"><code translate="No">permission</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>使用細粒度的 access_Control 時，設定受權者的權限。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Notifications">通知</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#notifications"><code translate="No">notifications</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>工作或輸出完成時收到通知。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#url"><code translate="No">url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>工作或輸出完成時收到通知。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#format"><code translate="No">format</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>通知的格式和內容類型。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-notifications.html#headers"><code translate="No">headers</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要在 HTTP 通知上傳遞的標頭。</td>
+        </tr>
+        <!-- <tr>
+				<td><a href="/node/17881#event"><code translate="No">event</code></a></td>
+				<td><span class="none">none</span></td>
+				<td>The event that triggers a notification. Used for Live HLS outputs.</td>
+			</tr> -->
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Conditional_Outputs">條件輸出</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_size"><code translate="No">min_size</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源尺寸小於指定尺寸，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_size"><code translate="No">max_size</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源維度大於指定尺寸，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_duration"><code translate="No">min_duration</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>跳過輸出，如果源持續時間比給定的持續時間短，以秒為單位。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_duration"><code translate="No">max_duration</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果源持續時間長於給定的持續時間，則略過輸出，以秒為單位。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_audio_bitrate"><code translate="No">min_audio_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源音訊位元速率小於指定的位元速率 (以 kbps 為單位)，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_audio_bitrate"><code translate="No">max_audio_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源音訊位元速率大於指定的位元率 (以 kbps 為單位)，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#min_video_bitrate"><code translate="No">min_video_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源視訊位元速率小於指定的位元速率 (以 kbps 為單位)，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#max_video_bitrate"><code translate="No">max_video_bitrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>如果來源視訊位元速率大於指定的位元速率 (以 kbps 為單位)，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#require_audio"><code translate="No">require_audio</code></a></td>
+          <td>假的</td>
+          <td>如果來源檔案不包含音軌，則略過輸出。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html#require_video"><code translate="No">require_video</code></a></td>
+          <td>假的</td>
+          <td>如果源文件不包含視頻軌，則跳過輸出。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Segmented_Streaming">分段串流</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streaming_delivery_format"><code translate="No">streaming_delivery_format</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設置可串流輸出的格式/協議配置。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streaming_delivery_profile"><code translate="No">streaming_delivery_profile</code></a></td>
+          <td>生活</td>
+          <td>設定串流傳遞格式的特定設定檔。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#playlist_format"><code translate="No">playlist_format</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定播放清單輸出的格式。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_seconds"><code translate="No">segment_seconds</code></a></td>
+          <td>+10</td>
+          <td>設置分段輸出中每個分段的最大持續時間。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#alternate_audio"><code translate="No">alternate_audio</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>為 HLS 播放清單提供一組替代音訊串流。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#streams"><code translate="No">streams</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提供要重新格式化為播放清單的串流資訊清單</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#path"><code translate="No">path</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定流清單文件的路徑</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#bandwidth"><code translate="No">bandwidth</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定播放清單流的頻寬</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#resolution"><code translate="No">resolution</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定播放清單流的解析度</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#codecs"><code translate="No">codecs</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定播放清單串流中使用的轉碼器</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#audio"><code translate="No">audio</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定播放列表的備用音軌。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_image_url"><code translate="No">segment_image_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要在僅音訊區段上顯示的影像</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#segment_video_snapshots"><code translate="No">segment_video_snapshots</code></a></td>
+          <td>假的</td>
+          <td>將視頻文件分段為純音頻分段時，請為每個分段拍攝視頻快照作為縮略圖。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#source"><code translate="No">source</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>指定播放清單串流的來源媒體</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a></td>
+          <td>3 表示即時輸出，5 表示樣本 AES 加密；否則為 2。</td>
+          <td>要使用的最大 HLS 通訊協定。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#hls_optimized_ts"><code translate="No">hls_optimized_ts</code></a></td>
+          <td>真正</td>
+          <td>在 iOS 上針對 HTTP 即時串流最佳化 TS 區段檔案。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#prepare_for_segmenting"><code translate="No">prepare_for_segmenting</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>包含字幕和關鍵影格時間以進行分段。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#smil-base-url"><code translate="No">smil_base_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>新增  至  SMIL 播放清單的區段。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#byte_range_segmenting"><code translate="No">byte_range_segmenting</code></a></td>
+          <td>假的</td>
+          <td>設定 HLS 分段以產生單一輸出檔案，而不是每個區段一個檔案。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#generate_keyframe_manifest"><code translate="No">generate_keyframe_manifest</code></a></td>
+          <td>假的</td>
+          <td>產生快轉和反向播放所需的 HLS 關鍵影格 (i-frame) 資訊清單。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#keyframe_manifest_filename"><code translate="No">keyframe_manifest_filename</code></a></td>
+          <td>框架索引</td>
+          <td>覆寫 HLS 關鍵影格資訊清單的預設檔案名稱。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#allow_skipped_sources"><code translate="No">allow_skipped_sources</code></a></td>
+          <td>假的</td>
+          <td>忽略以下來源<a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">有條件的輸出</a>已被跳過。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Encryption">加密</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_method"><code translate="No">encryption_method</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設置用於加密的加密方法。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key"><code translate="No">encryption_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定要使用的單一加密金鑰，而不是讓 ZenCoder 產生一個加密金鑰</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_url"><code translate="No">encryption_key_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將 URL 設定為單一加密金鑰使用，而不是讓 Zencoder 產生</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_rotation_period"><code translate="No">encryption_key_rotation_period</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>在多個區段後旋轉至新的加密金鑰</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_key_url_prefix"><code translate="No">encryption_key_url_prefix</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>使用傳遞的字符串前加密鍵 URL</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_iv"><code translate="No">encryption_iv</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設置加密時要使用的初始化向量</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-encryption.html#encryption_password"><code translate="No">encryption_password</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設置用於生成初始化向量的密碼</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Decryption">解密</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_method"><code translate="No">decryption_method</code></a></td>
+          <td>aes-128-cbc（如果<a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key"><code translate="No">decryption_key</code></a>要么<a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key_url"><code translate="No">decryption_key_url</code></a>設置）</td>
+          <td>設定要使用的解密演算法。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key"><code translate="No">decryption_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>設定要使用的解密金鑰。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_key_url"><code translate="No">decryption_key_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要使用的解密金鑰檔案的 URL。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-decryption.html#decryption_password"><code translate="No">decryption_password</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>與密鑰結合使用的密碼，用於解密輸入文件。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="DRM">DRM</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#drm"><code translate="No">drm</code></a></td>
+          <td>{}</td>
+          <td>DRM 選項的雜湊</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#method"><code translate="No">method</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>用於保護內容的數字版權管理（DRM）方法。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#provider"><code translate="No">provider</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>使用的數字版權管理（DRM）提供程序。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#key_id"><code translate="No">key_id</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要使用的密鑰的標識符。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#key_guid"><code translate="No">key_guid</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>要使用的密鑰的標識符。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#user_key"><code translate="No">user_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>DRM提供程序的用戶密鑰。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#server_key"><code translate="No">server_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>來自DRM提供程序的服務器密鑰。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#media_id"><code translate="No">media_id</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>媒體的唯一標識符。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#content_id"><code translate="No">content_id</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>內容的唯一標識符。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#content_key"><code translate="No">content_key</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>內容的唯一標識符。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#schemas"><code translate="No">schemas</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>使用一般加密時，DRM 提供者的相關資訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#type"><code translate="No">type</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>此DRM架構的提供程序類型。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/content-protection/encoding-settings-drm.html#license_acquisition_url"><code translate="No">license_acquisition_url</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>的許可證獲取URL <code translate="No">Playready CENC DRM</code>模式。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class=" bcls-section">
+    <h2 id="H264">H.264</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_reference_frames"><code translate="No">h264_reference_frames</code></a></td>
+          <td>3</td>
+          <td>要在 H.264 視訊中使用的一些參考框架。</td>
+        </tr>
+        <tr>
+          <td>h264_profile<a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_profile"></a></td>
+          <td>基準線 &gt;</td>
+          <td>要使用的 H.264 設定檔。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_level"><code translate="No">h264_level</code></a></td>
+          <td>自動計算使用<a href="http://en.wikipedia.org/wiki/H.264#Levels">H.264電平圖</a>根據輸出的視頻。</td>
+          <td>要使用的 H.264 等級。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#h264_bframes"><code translate="No">h264_bframes</code></a></td>
+          <td>0</td>
+          <td>連續 B 影格的最大數目。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#tuning"><code translate="No">tuning</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>調整特定內容類型的輸出視訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html#crf"><code translate="No">crf</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>位元速率控制設定。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="HDR10">HDR10</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_red_x"><code translate="No">master_display.red.x</code></a></td>
+          <td>無</td>
+          <td>顏色音量 x 設置為紅色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_red_y"><code translate="No">master_display.red.y</code></a></td>
+          <td>無</td>
+          <td>顏色音量 y 設置為紅色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_green_x"><code translate="No">master_display.green.x</code></a></td>
+          <td>沒有。</td>
+          <td>顏色音量 x 設置為綠色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_green_y"><code translate="No">master_display.green.y</code></a></td>
+          <td>沒有。</td>
+          <td>顏色音量 y 設置為綠色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_blue_x"><code translate="No">master_display.blue.x</code></a></td>
+          <td>沒有。</td>
+          <td>顏色音量 x 設置為藍色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_blue_y"><code translate="No">master_display.blue.y</code></a></td>
+          <td>沒有。</td>
+          <td>顏色音量 y 設置為藍色。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_white_point_x"><code translate="No">master_display.white_point.x</code></a></td>
+          <td>沒有。</td>
+          <td>白點的顏色音量 x 設定。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_white_point_y"><code translate="No">master_display.white_point.y</code></a></td>
+          <td>沒有。</td>
+          <td>白點的顏色音量 y 設定。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_luminance_min"><code translate="No">master_display.luminance.min</code></a></td>
+          <td>沒有。</td>
+          <td>每平方公尺 (cd/m2) 以尼特或新燭光為單位的最小明度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#master_display_luminance_max"><code translate="No">master_display.luminance.max</code></a></td>
+          <td>沒有。</td>
+          <td>每平方公尺 (cd/m2) 以尼特或新燭光為單位的最大亮度。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#max_content_light_level"><code translate="No">max_content_light_level</code></a></td>
+          <td>沒有。</td>
+          <td>每平方米（cd/m2）的內容的最大光級別（cd/m2）-整數值。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#max_frame_average_light_level"><code translate="No">max_frame_average_light_level</code></a></td>
+          <td>沒有。</td>
+          <td>每平方公尺 (cd/m2) 內容幀 nto 或新燭光的最大平均光級-整數值。雖然允許多達 10000 的值，但 100-200 範圍內的值通常會產生最佳的結果。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="FLV">FLV</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#cue_points"><code translate="No">cue_points</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>將事件或導覽提示點新增至 FLV 視訊。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#type"><code translate="No">type</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提示點類型。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#time"><code translate="No">time</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提示點時間，以秒為單位。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#name"><code translate="No">name</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提示點名稱。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html#data"><code translate="No">data</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>提示點資料。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="VP6">VP6</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_temporal_down_watermark"><code translate="No">vp6_temporal_down_watermark</code></a></td>
+          <td>+20</td>
+          <td>VP6 暫時向下浮水印百分比。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_temporal_resampling"><code translate="No">vp6_temporal_resampling</code></a></td>
+          <td>當每個像素的位數較少時編碼為true。否則為假。</td>
+          <td>啟用或停用 VP6 暫時重新取樣。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_undershoot_pct"><code translate="No">vp6_undershoot_pct</code></a></td>
+          <td>+90</td>
+          <td>以稍低一點的數據圖表為目標。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_profile"><code translate="No">vp6_profile</code></a></td>
+          <td>vp6e</td>
+          <td>VP6 設定檔：vp6s 或 vp6e。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_compression_mode"><code translate="No">vp6_compression_mode</code></a></td>
+          <td>好</td>
+          <td>VP6壓縮方式：<code translate="No">good</code>要么<code translate="No">best</code>。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_2pass_min_section"><code translate="No">vp6_2pass_min_section</code></a></td>
+          <td>+40</td>
+          <td>對於雙通 VBR 編碼，編碼器允許的最低數據表。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_2pass_max_section"><code translate="No">vp6_2pass_max_section</code></a></td>
+          <td>400</td>
+          <td>對於雙通 VBR 編碼，編碼器允許的最高數據表。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_stream_prebuffer"><code translate="No">vp6_stream_prebuffer</code></a></td>
+          <td>6</td>
+          <td>開始播放前需要的預先載入秒數。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_stream_max_buffer"><code translate="No">vp6_stream_max_buffer</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>最大解碼器緩衝區大小</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_deinterlace_mode"><code translate="No">vp6_deinterlace_mode</code></a></td>
+          <td>適應的</td>
+          <td>適用於 VP6 的去交錯模式</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#vp6_denoise_level"><code translate="No">vp6_denoise_level</code></a></td>
+          <td>0</td>
+          <td>標示 VP6 的等級</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#alpha_transparency"><code translate="No">alpha_transparency</code></a></td>
+          <td>假的</td>
+          <td>啟用 Alpha 透明度。目前，僅由 VP6 支援。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html#constant_bitrate"><code translate="No">constant_bitrate</code></a></td>
+          <td>假的</td>
+          <td>使用常數位元速率 (CBR) 編碼。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="MP4">MP4</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html#hint"><code translate="No">hint</code></a></td>
+          <td>假的</td>
+          <td>為 RTP/RTSP 啟用 MP4 檔案的提示。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html#mtu_size"><code translate="No">mtu_size</code></a></td>
+          <td>+1450</td>
+          <td>設定 MP4 提示的 MTU 大小。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="AAC">AAC</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html#max_aac_profile"><code translate="No">max_aac_profile</code></a></td>
+          <td>他-阿克</td>
+          <td>最先進的 (壓縮) AAC 設定檔允許什麼？</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html#force_aac_profile"><code translate="No">force_aac_profile</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>強制使用特定的AAC配置文件，而不是讓Zencoder為比特率選擇最佳配置文件。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Broadcast">廣播</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#video_codec_preset"><code translate="No">video_codec_preset</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>預設視頻編碼，以與特定行業標準兼容。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#format_preset"><code translate="No">format_preset</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>預設格式，以允許與特定行業標準兼容。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_muxrate"><code translate="No">ts_muxrate</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>可以復用傳輸流的最大速率（kbps）。僅與ts格式一起使用。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_pmt_pid"><code translate="No">ts_pmt_pid</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>覆蓋程序映射表的數據包ID。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts-video-pid"><code translate="No">ts_video_pid</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>覆蓋視頻數據的數據包ID。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_audio_pid"><code translate="No">ts_audio_pid</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>覆蓋音頻數據的數據包ID。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_pcr_pid"><code translate="No">ts_pcr_pid</code></a></td>
+          <td><span class="none">無</span></td>
+          <td>覆蓋程序時鐘參考的數據包ID。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#ts_cbr"><code translate="No">ts_cbr</code></a></td>
+          <td>假的</td>
+          <td>通過在傳輸流層填充數據包來創建 CBR 輸出</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html#lossless_video"><code translate="No">lossless_video</code></a></td>
+          <td>假的</td>
+          <td>如果視頻編解碼器支持，則啟用無損視頻編碼。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Aspera">阿斯佩拉</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#aspera_transfer_policy"><code translate="No">aspera_transfer_policy</code></a></td>
+          <td>公平</td>
+          <td>如何配置 Aspera 檔案傳輸的可用頻寬。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#transfer_minimum_rate"><code translate="No">transfer_minimum_rate</code></a></td>
+          <td>+1000</td>
+          <td>以 Kbps 為單位的資料傳輸最低限度的目標速率。</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html#transfer_maximum_rate"><code translate="No">transfer_maximum_rate</code></a></td>
+          <td>+250000</td>
+          <td>資料傳輸上限的 Kbps 目標速率。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section class="bcls-section">
+    <h2 id="Transmuxing">轉換</h2>
+
+    <table class="bcls-table">
+      <thead class="bcls-table__head">
+        <tr>
+          <th>設定</th>
+          <th>預設</th>
+          <th>描述</th>
+        </tr>
+      </thead>
+      <tbody class="bcls-table__body">
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html#copy_video"><code translate="No">copy_video</code></a></td>
+          <td>假的</td>
+          <td>複製輸入文件的視頻軌道</td>
+        </tr>
+        <tr>
+          <td><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html#copy_audio"><code translate="No">copy_audio</code></a></td>
+          <td>假的</td>
+          <td>複製輸入檔案的音軌</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</article>
+<!-- complete bootstrap layout -->
+    </div>
+    <div class="col-sm-2 right-side-bar">
+      
+      <nav class="right-side-nav" id="right_side_nav">
+        <h6 class="toc">頁面內容</h6>
+        <ul id="in_page_nav" class="list-none"></ul>
+      </nav>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+<div class="last-updated">
+  頁面最後更新日期為 9 月 28 日
+</div>
+
+
+
+<footer class="bcls-footer" role="contentinfo">
+  <div class="row">
+    <div class="region region-footer-top-center col-md-12">
+      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
+
+        <h2>布萊特灣支援</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://status.brightcove.com">系統狀態</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
+          </li>
+          <li>
+            <a href="https://support.brightcove.com/">文獻資料</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
+
+        <h2>訓練</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
+          </li>
+          <li>
+            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
+          </li>
+          <li>
+            <a href="https://university.brightcove.com/">布萊特灣大學</a>
+          </li>
+        </ul>
+
+      </nav>
+      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
+
+        <h2>Brightcove</h2>
+
+        <ul class="menu">
+          <li>
+            <a href="https://www.brightcove.com">亮麗</a>
+          </li>
+          <li>
+            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="region region-footer-bottom-center col-md-12">
+      <div class="bcls-copyright footer-menu">
+        <table>
+          <tr>
+            <td>
+              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
+            </td>
+            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
+            <td>
+              <div class="gf-links-cols footer-menu">
+                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</footer>
+<div id="talla_wrapper">
+  <p style="text-align: right;position: relative;"><button style="background:rgb(2, 28, 146);color:Snow;padding:.3rem;position:fixed;right:0;bottom:1em;z-index:9999999" onclick="javascript:displayChat()">有問題嗎？ </button> </p>
+  <div id="talla_chat">
+</div>
+</div>
+<script>
+      
+  var searchBox = sajari.init({
+    mode: "search-box",
+    project: "1588255093746585379", // Set this to your project.
+    collection: "brightcove-documenation", // Set this to your collection.
+    instantPipeline: "autocomplete", // Pipeline used as you type
+    inputPlaceholder: "Search", // Input element placeholder
+    maxSuggestions: 5, // Maximum number of suggestions to show
+    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
+  });
+  
+    searchBox("sub", "pipeline.search-sent", function (_, query) {
+      window.location = "/search.html?q=" + encodeURIComponent(query.q);
+    });
+  
+
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
+  
+  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
+  <script src="/assets/js/sites_nav.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
+  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
+  <script src="/assets/js/feedback.js"></script>
+  
+  <script src="/assets/js/sajari-search-foot.js"></script>
+  
+  <!-- <script src="/assets/js/sajari-index.js"></script> -->
+  <script src="https://assets.talla.com/latest/embeddedjs/talla.js"></script>
+  <script src="/assets/js/talla-init.js"></script>
+  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,812 @@
+[
+  {
+      "newURL": "https://zencoder.support.brightcove.com/integration/100-integration-reliability.html",
+      "oldURL": "/100-integration-reliability"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/404.html",
+      "oldURL": "/404"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/advanced-audio-mapping-guide.html",
+      "oldURL": "/advanced-audio-mapping-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/references/api-version-history.html",
+      "oldURL": "/api-version-history"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/as11-mxf.html",
+      "oldURL": "/as11-mxf"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/avc-intra-guide.html",
+      "oldURL": "/avc-intra-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/brightcove-answer.html",
+      "oldURL": "/brightcove-answer"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/cae-guide.html",
+      "oldURL": "/cae-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings-stage.html",
+      "oldURL": "/cae-settings-stage"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/cae-settings.html",
+      "oldURL": "/cae-settings"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/contact-sales.html",
+      "oldURL": "/contact-sales"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/creating-mp4-and-hls-outputs-together.html",
+      "oldURL": "/creating-mp4-and-hls-outputs-together"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/creating-multiple-outputs.html",
+      "oldURL": "/creating-multiple-outputs"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/dash-streaming-and-playlists.html",
+      "oldURL": "/dash-streaming-and-playlists"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-aac.html",
+      "oldURL": "/encoding-settings-aac"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/sources-destinations/encoding-settings-aspera.html",
+      "oldURL": "/encoding-settings-aspera"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-audio-processing.html",
+      "oldURL": "/encoding-settings-audio-processing"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-audio.html",
+      "oldURL": "/encoding-settings-audio"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-broadcast.html",
+      "oldURL": "/encoding-settings-broadcast"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-captions.html",
+      "oldURL": "/encoding-settings-captions"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-clips.html",
+      "oldURL": "/encoding-settings-clips"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-conditional-outputs.html",
+      "oldURL": "/encoding-settings-conditional-outputs"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/content-protection/encoding-settings-decryption.html",
+      "oldURL": "/encoding-settings-decryption"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/content-protection/encoding-settings-drm.html",
+      "oldURL": "/encoding-settings-drm"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/content-protection/encoding-settings-encryption.html",
+      "oldURL": "/encoding-settings-encryption"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-flv.html",
+      "oldURL": "/encoding-settings-flv"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html",
+      "oldURL": "/encoding-settings-format-and-codecs"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-frame-rate.html",
+      "oldURL": "/encoding-settings-frame-rate"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-general-output-settings.html",
+      "oldURL": "/encoding-settings-general-output-settings"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-h264.html",
+      "oldURL": "/encoding-settings-h264"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-hdr10.html",
+      "oldURL": "/encoding-settings-hdr10"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-job.html",
+      "oldURL": "/encoding-settings-job"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-mp4.html",
+      "oldURL": "/encoding-settings-mp4"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/encoding-settings-notifications.html",
+      "oldURL": "/encoding-settings-notifications"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-rate-control.html",
+      "oldURL": "/encoding-settings-rate-control"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-resolution.html",
+      "oldURL": "/encoding-settings-resolution"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/sources-destinations/encoding-settings-s3-settings.html",
+      "oldURL": "/encoding-settings-s3-settings"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html",
+      "oldURL": "/encoding-settings-segmented-streaming"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-thumbnails.html",
+      "oldURL": "/encoding-settings-thumbnails"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-transmuxing.html",
+      "oldURL": "/encoding-settings-transmuxing"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-video-processing.html",
+      "oldURL": "/encoding-settings-video-processing"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/encoding-settings-video.html",
+      "oldURL": "/encoding-settings-video"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/encoding-settings-vp6.html",
+      "oldURL": "/encoding-settings-vp6"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/assets/encoding-settings-watermarks.html",
+      "oldURL": "/encoding-settings-watermarks"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html",
+      "oldURL": "/error-akamainetstoragefilesizeerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-checksummismatcherror.html",
+      "oldURL": "/error-checksummismatcherror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html",
+      "oldURL": "/error-dimensiontoosmallerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html",
+      "oldURL": "/error-downloadaccessdeniederror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-downloadfailureerror.html",
+      "oldURL": "/error-downloadfailureerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-downloadtimeouterror.html",
+      "oldURL": "/error-downloadtimeouterror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-filenotfounderror.html",
+      "oldURL": "/error-filenotfounderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-filepermanentlymovederror.html",
+      "oldURL": "/error-filepermanentlymovederror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-inaccuratedurationerror.html",
+      "oldURL": "/error-inaccuratedurationerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html",
+      "oldURL": "/error-incompatiblewithdynamicprofileserror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-inputfilenotfound.html",
+      "oldURL": "/error-inputfilenotfound"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html",
+      "oldURL": "/error-invalidaccesskeyiderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html",
+      "oldURL": "/error-invalidaudiosettingserror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html",
+      "oldURL": "/error-invalidcodeccombinationerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html",
+      "oldURL": "/error-invaliddownloadedfiletypeerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html",
+      "oldURL": "/error-invalidencryptionsettingserror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidfilepatherror.html",
+      "oldURL": "/error-invalidfilepatherror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidformatcodecerror.html",
+      "oldURL": "/error-invalidformatcodecerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidframerateerror.html",
+      "oldURL": "/error-invalidframerateerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html",
+      "oldURL": "/error-invalidusernameorpassworderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html",
+      "oldURL": "/error-invalidvideobitrateerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-invalidvideosettingserror.html",
+      "oldURL": "/error-invalidvideosettingserror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-nomediaerror.html",
+      "oldURL": "/error-nomediaerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-quicktimereferenceerror.html",
+      "oldURL": "/error-quicktimereferenceerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-remoteserverproblemerror.html",
+      "oldURL": "/error-remoteserverproblemerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-rtmpauthfailederror.html",
+      "oldURL": "/error-rtmpauthfailederror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html",
+      "oldURL": "/error-rtmpmaxstreamsxidreached"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html",
+      "oldURL": "/error-rtmpstreamnamealreadyinuse"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html",
+      "oldURL": "/error-s3bucketnotfounderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-segmentingerror.html",
+      "oldURL": "/error-segmentingerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-skippedsourceerror.html",
+      "oldURL": "/error-skippedsourceerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-thumbnailerror.html",
+      "oldURL": "/error-thumbnailerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-transcodingerror.html",
+      "oldURL": "/error-transcodingerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html",
+      "oldURL": "/error-transferinvalidgranteegroupurlerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html",
+      "oldURL": "/error-transferinvalidgranteeiderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-truncatedfileerror.html",
+      "oldURL": "/error-truncatedfileerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html",
+      "oldURL": "/error-unabletocreatedynamicprofileserror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html",
+      "oldURL": "/error-unexpecteddownloadproblemerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html",
+      "oldURL": "/error-unexpectedffmpegresult"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html",
+      "oldURL": "/error-unexpectedmplayerresult"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpectedprogenresult.html",
+      "oldURL": "/error-unexpectedprogenresult"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpectedresulterror.html",
+      "oldURL": "/error-unexpectedresulterror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html",
+      "oldURL": "/error-unexpecteduploadproblemerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unexpectedx264result.html",
+      "oldURL": "/error-unexpectedx264result"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unreadablefileerror.html",
+      "oldURL": "/error-unreadablefileerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unsupportedcodecerror.html",
+      "oldURL": "/error-unsupportedcodecerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unsupportedencodingerror.html",
+      "oldURL": "/error-unsupportedencodingerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html",
+      "oldURL": "/error-unsupportedencryptionerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html",
+      "oldURL": "/error-unsupportedtranscodecombinationerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html",
+      "oldURL": "/error-uploadaccessdeniederror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-uploadfailureerror.html",
+      "oldURL": "/error-uploadfailureerror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-uploadservernotfounderror.html",
+      "oldURL": "/error-uploadservernotfounderror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-uploadtimeouterror.html",
+      "oldURL": "/error-uploadtimeouterror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/error-workertimeouterror.html",
+      "oldURL": "/error-workertimeouterror"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-basics.html",
+      "oldURL": "/faq-basics"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-codecs-and-formats.html",
+      "oldURL": "/faq-codecs-and-formats"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-encoding.html",
+      "oldURL": "/faq-encoding"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-file-transfers.html",
+      "oldURL": "/faq-file-transfers"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/integration/faq-integration-libraries.html",
+      "oldURL": "/faq-integration-libraries"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-rate-limiting.html",
+      "oldURL": "/faq-rate-limiting"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/faq-zencoder-pricing.html",
+      "oldURL": "/faq-zencoder-pricing"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/getting-api-key.html",
+      "oldURL": "/getting-api-key"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/getting-notifications-when-videos-are-finished.html",
+      "oldURL": "/getting-notifications-when-videos-are-finished"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/h264-advanced-guide.html",
+      "oldURL": "/h264-advanced-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/hdr10-video-output.html",
+      "oldURL": "/hdr10-video-output"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/hevch265-guide.html",
+      "oldURL": "/hevch265-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/highwinds-smil.html",
+      "oldURL": "/highwinds-smil"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/how-zencoder-saves-your-files-when-uploads-fail.html",
+      "oldURL": "/how-zencoder-saves-your-files-when-uploads-fail"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/html5-encoding.html",
+      "oldURL": "/html5-encoding"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/http-live-segmented-streaming-and-playlists.html",
+      "oldURL": "/http-live-segmented-streaming-and-playlists"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/http-live-streaming-using-fragmented-mp4.html",
+      "oldURL": "/http-live-streaming-using-fragmented-mp4"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/icons.html",
+      "oldURL": "/icons"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/index-old.html",
+      "oldURL": "/index-old"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/integration/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/error-codes/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general-audio-video/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/assets/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/sources-destinations/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/content-protection/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/general/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/formats-codecs/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/references/",
+      "oldURL": "/index"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/iosmobile-encoding.html",
+      "oldURL": "/iosmobile-encoding"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/references/known-issues.html",
+      "oldURL": "/known-issues"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/microsoft-smooth-streaming.html",
+      "oldURL": "/microsoft-smooth-streaming"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/online-training-courses.html",
+      "oldURL": "/online-training-courses"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/opening-case-with-brightcove-support.html",
+      "oldURL": "/opening-case-with-brightcove-support"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/output-settings.html",
+      "oldURL": "/output-settings"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/overview-context-aware-encoding.html",
+      "oldURL": "/overview-context-aware-encoding"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/overview-zencoder.html",
+      "oldURL": "/overview-zencoder"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/problems.html",
+      "oldURL": "/problems"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-settings/quick-reference.html",
+      "oldURL": "/quick-reference"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/getting-started/quick-start-zencoder.html",
+      "oldURL": "/quick-start-zencoder"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/references/reference.html",
+      "oldURL": "/reference"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/region-outages.html",
+      "oldURL": "/region-outages"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/register-training.html",
+      "oldURL": "/register-training"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/references/release-notes.html",
+      "oldURL": "/release-notes"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/search-test.html",
+      "oldURL": "/search-test"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/search.html",
+      "oldURL": "/search"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/special-characters-usernames-and-passwords.html",
+      "oldURL": "/special-characters-usernames-and-passwords"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/supported-video-and-audio-formats-codecs-and-containers.html",
+      "oldURL": "/supported-video-and-audio-formats-codecs-and-containers"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/integration/test-jobs-and-integration-mode.html",
+      "oldURL": "/test-jobs-and-integration-mode"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/using-quality-based-encoding-modes-streaming-video.html",
+      "oldURL": "/using-quality-based-encoding-modes-streaming-video"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/integration/using-read-only-api-keys.html",
+      "oldURL": "/using-read-only-api-keys"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/using-zencoder-azure.html",
+      "oldURL": "/using-zencoder-azure"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/using-zencoder-google-cloud-platform.html",
+      "oldURL": "/using-zencoder-google-cloud-platform"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/general-information/using-zencoder-s3.html",
+      "oldURL": "/using-zencoder-s3"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/support/viewing-brightcove-system-status-page.html",
+      "oldURL": "/viewing-brightcove-system-status-page"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/vp6-advanced-guide.html",
+      "oldURL": "/vp6-advanced-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/encoding-guides/vp9-guide.html",
+      "oldURL": "/vp9-guide"
+  },
+
+  {
+      "newURL": "https://zencoder.support.brightcove.com/error-troubleshooting/when-should-i-retry-failed-jobs.html",
+      "oldURL": "/when-should-i-retry-failed-jobs"
+  },
+]
+
