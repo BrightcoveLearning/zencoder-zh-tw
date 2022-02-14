@@ -1,661 +1,18 @@
-﻿<!doctype html>
-<html lang="zh-TW">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本主題提供 Zencoder 支援高動態範圍 (HDR) 視訊格式的詳細資料。">
-
-  <title>支援的 HDR 視訊格式</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
-  <script src="/assets/js/sajari-head.js"></script>
-</head>
-
-<body class="body">
-
-<header>
-  <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="產品標誌" style="max-height: 100px;max-width: 232px;"/></a>
-<!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
-
-<script>
-/* <![CDATA[ */
-function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-/* ]]> */
-</script>
-
-Brightcove 
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
-    
-  </div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb arr-right">
-      
-      <li class="breadcrumb-item"><a href="/">首頁</a></li>
-      
-      
-      
-      <li class="breadcrumb-item"><a href="/encoding-guides/">編碼指南</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">支援的 HDR 視訊格式</li>
-    </ol>
-  </nav>
-</header>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        				<select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-					<option value="">其他布萊特灣文件</option>
-					
-						
-							<option value="https://support.brightcove.com">文件首頁</option>
-						
-					
-						
-							<option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
-						
-					
-						
-							<option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
-						
-					
-						
-							<option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
-						
-					
-						
-							<option value="https://engage.support.brightcove.com">布萊特灣參與</option>
-						
-					
-						
-							<option value="https://live.support.brightcove.com">Brightcove Live</option>
-						
-					
-						
-							<option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
-						
-					
-						
-							<option value="https://ssai.support.brightcove.com">布萊特灣</option>
-						
-					
-						
-							<option value="https://social.support.brightcove.com">布萊特灣社會</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
-						
-					
-						
-							<option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
-						
-					
-						
-							<option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
-						
-					
-						
-							<option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
-						
-					
-						
-							<option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
-						
-					
-						
-							<option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
-						
-					
-						
-							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
-						
-					
-				</select>
-						<nav class="sidenav" id="side_nav">
-
-          
-            
-            <h5><a href="/index.html">首頁</a></h5>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/getting-started/index.html">開始使<strong>用 + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/getting-started/overview-zencoder.html">概述</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/quick-start-zencoder.html">快速入門</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/getting-api-key.html">取得 API 金鑰</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/output-settings.html">輸出設定</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/creating-multiple-outputs.html">建立多個輸出</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/general-information/index.html">一般資訊<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/general-information/faq-basics.html">基本概念</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-codecs-and-formats.html">轉碼器和格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-encoding.html">編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-file-transfers.html">檔案傳輸</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-zencoder-pricing.html">齊編碼器定價</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-rate-limiting.html">速率限制</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html">支援的視訊和音訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/overview-context-aware-encoding.html">概述：上下文感知編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">視訊完成時收到通知</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Zencoder 如何在上傳失敗時儲存檔案</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-s3.html">使用 ZenCoder 與 S3 搭配使用</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-azure.html">在 Azure 中使用贊編碼器</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-google-cloud-platform.html">使用 Zencoder 與谷歌雲存儲</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/references/index.html">參考資料<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/references/reference.html">API 參考</a></li>
-                  
-                
-                  
-                    <li><a href="/references/known-issues.html">已知問題</a></li>
-                  
-                
-                  
-                    <li><a href="/references/release-notes.html">產品更新</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-settings/index.html">編碼設定<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general/index.html">一般設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-job.html">工作設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">一般輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/cae-settings.html">CAE 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">條件輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-notifications.html">通知設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general-audio-video/index.html">音訊/視訊設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">音訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">音訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video.html">視訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html">視訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">廣播設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">影格速率設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">匯率控制設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html">解析度設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html">分段串流設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html">轉換設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/formats-codecs/index.html">格式和轉碼器設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">格式與轉碼器設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">AAC 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">FLV 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">HDR 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">H.264 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html">MP4 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html">VP6 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/assets/index.html">媒體資產設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">註解設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">剪輯片段設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-thumbnails.html">縮圖設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-watermarks.html">浮水印設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/content-protection/index.html">內容防護設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">加密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">解密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">DRM 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/sources-destinations/index.html">來源/目的地設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html">S3 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">阿斯佩拉設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-guides/index.html">編碼指南<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">音訊對應指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/as11-mxf.html">作為 11 毫米 x F 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/avc-intra-guide.html">AVC 內部指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/cae-guide.html">CAE 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html">翻譯指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH 串流和播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/h264-advanced-guide.html">H.264 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hdr10-video-output.html">支援的 HDR 視訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hevch265-guide.html">HEVC/H.265 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/highwinds-smil.html">高風 SMIL 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/html5-encoding.html">HTML5 編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HLS 串流與播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">使用分散式 MP4 的 HLS </a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/iosmobile-encoding.html">Io/行動裝置編碼指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/microsoft-smooth-streaming.html">微軟流暢的串流</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html">以品質為基礎的串流編碼模式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp6-advanced-guide.html">VP6 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp9-guide.html">VP9 指南</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">錯誤/疑難排解<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/error-troubleshooting/problems.html">常見問題</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/region-outages.html">區域中斷</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html">重試失敗工作的時機</a></li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/error-troubleshooting/error-codes/index.html">錯誤代碼<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkA 大型儲存空間檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">總和檢查符合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">尺寸標註小錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">下載存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">下載失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">下載時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">檔案外部建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">檔案永久移動程式錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">不準確的持續時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">與動態設定檔不相容錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">找到輸入檔案</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">無效存取金鑰存取器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">無效的音訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">無效的解碼器組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">下載無效的檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">無效密碼設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">無效的檔案路徑</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">無效格式化程式碼驗證</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">無效的影格速率錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">使用者名稱無效密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">無效的視訊標準錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">無效的視訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-nomediaerror.html">無媒體錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html">快速時間參考錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html">遠端伺服器問題錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html">驗證失敗錯誤錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html">RTMP 最大流量已設定</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html">RTMP串流名稱已準備好使用</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html">S3 代理程式創建者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-segmentingerror.html">分段錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html">跳過來源錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-thumbnailerror.html">縮圖錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transcodingerror.html">轉碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html">移轉። 無效群組清單錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html">轉移። 無效的莊家</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html">截斷檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html">無法建立動態設定檔錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html">下載問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html">所有人都可以看到</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html">圖層結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html">建議的後代結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html">受到的結果錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html">關於載入問題的問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html">所有結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html">無法讀取檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html">不支援的編碼器</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html">不支援的編碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html">不支援密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html">不支援的轉換碼組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html">上傳存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html">上傳失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html">上傳伺服器無法建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html">上傳時間</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-workertimeouterror.html">工作者時間錯誤</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/integration/index.html">整合<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/integration/faq-integration-libraries.html">整合程式庫</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/100-integration-reliability.html">100% 整合可靠性</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/test-jobs-and-integration-mode.html">測試工作和整合模式</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/using-read-only-api-keys.html">使用唯讀 API 金鑰</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    
-                  
-                
-                  
-                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
-                  
-                
-                  
-                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
-                  
-                
-                  
-                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
-                  
-                
-              </ul>
-            
-          
-      </nav>
-    </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
-
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
-
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">頁面內容</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
-<!-- open in new tab/window -->
-<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
-
-
-
-  
-    
-
-
-<h1>支援的 HDR 視訊格式</h1>
+---
+title:支持的HDR視頻格式
+description:本主題提供有關 Zencoder 對高動態範圍 (HDR) 視頻格式的支持的詳細信息。
+parent: Encoding Guides
+---
+ <h1>{{ page.title }}</h1>
 <article class="bcls-article">
-  <summary>本主題提供 Zencoder 支援高動態範圍 (HDR) 視訊格式的詳細資料。</summary>
+  <summary>{{ page.description }}</summary>
 
   <section class="bcls-section">
-    <h2 id="Overview">概覽</h2>
+    <h2 id="Overview">概述</h2>
 
-    <p>高動態範圍（HDR）視頻一詞通常是指<em>視頻格式系列</em>，其特點是通過像素值，特定類型的光電傳輸特性（OETF），顏色空間以及與編碼視頻流一起攜帶的特殊元數據，可以實現更大範圍的顏色和亮度。這種格式通常用於UltraHD視頻內容的生產和交付。</p>
+    <p>術語高動態範圍 (HDR) 視頻通常是指 <em>視頻格式系列</em>，其特點是通過像素值、特定類型的電光傳輸特性 (OETF)、色彩空間以及與編碼視頻流一起攜帶的專用元數據來實現更廣泛的顏色和亮度。此類格式通常用於UltraHD視頻內容的生產和交付。</p>
+
+    <aside class="bcls-aside bcls-aside--warning language-editable">筆記：HDR 輸出只能從 HEVC (H.265) 源生成。不支持來自 H.264 源的 HDR 輸出。</aside>
 
     <p>有關HDR視頻的更多信息，請參見<a href="https://www.videomaker.com/how-to/technology/what-is-hdr-video/">什麼是HDR視頻？</a>和<a href="https://en.wikipedia.org/wiki/High-dynamic-range_video">高動態範圍視頻</a>。</p>
 
@@ -664,7 +21,7 @@ Brightcove
       <caption class="bcls-caption--table">支持HDR格式</caption>
       <thead class="bcls-table__head">
         <tr>
-          <th>HDR 格式</th>
+          <th>HDR格式</th>
           <th>像素深度</th>
           <th>像素範圍</th>
           <th>原色</th>
@@ -677,80 +34,80 @@ Brightcove
       </thead>
       <tbody class="bcls-table__body">
         <tr>
-          <td>HLG10 <sup><strong><a href="#note1-1"> [1-1]</a></strong></sup></td>
-          <td>+10</td>
-          <td>有限</td>
-          <td>二零零二年<sup><strong><a href="#note1-4"> [1 至 4] </a></strong></sup></td>
-          <td>那就是<sub> B </sub> C <sub> R </sub><sup><strong><a href="#note1-5"> [1-5] </a></strong></sup></td>
-          <td>HLG <sup><strong><a href="#note1-7"> [1-7]</a></strong></sup></td>
+          <td>HLG10 <sup><strong><a href="#note1-1">[1-1]</a></strong></sup></td>
+          <td>10</td>
+          <td>有限的</td>
+          <td>BT.2020 <sup><strong><a href="#note1-4">[1-4]</a></strong></sup></td>
+          <td>Y'C'<sub>B</sub>C'<sub>R</sub> <sup><strong><a href="#note1-5">[1-5]</a></strong></sup></td>
+          <td>HLG <sup><strong><a href="#note1-7">[1-7]</a></strong></sup></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>PQ10 <sup><strong><a href="#note1-1"> [1-1]</a></strong></sup></td>
-          <td>+10</td>
-          <td>有限</td>
-          <td>二零零二年<sup><strong><a href="#note1-4"> [1 至 4] </a></strong></sup></td>
-          <td>那就是<sub> B </sub> C <sub> R </sub><sup><strong><a href="#note1-5"> [1-5] </a></strong></sup></td>
-          <td>PQ <sup><strong><a href="#note1-8"> [1-8] </a></strong></sup></td>
+          <td>PQ10 <sup><strong><a href="#note1-1">[1-1]</a></strong></sup></td>
+          <td>10</td>
+          <td>有限的</td>
+          <td>BT.2020 <sup><strong><a href="#note1-4">[1-4]</a></strong></sup></td>
+          <td>Y'C'<sub>B</sub>C'<sub>R</sub> <sup><strong><a href="#note1-5">[1-5]</a></strong></sup></td>
+          <td>PQ <sup><strong><a href="#note1-8">[1-8]</a></strong></sup></td>
           <td></td>
           <td></td>
           <td></td>
         </tr>
         <tr>
-          <td>HDR10 <sup><strong><a href="#note1-1"> [1-1]</a></strong></sup></td>
-          <td>+10</td>
-          <td>有限</td>
-          <td>二零零二年<sup><strong><a href="#note1-4"> [1 至 4] </a></strong></sup></td>
-          <td>那就是<sub> B </sub> C <sub> R </sub><sup><strong><a href="#note1-5"> [1-5] </a></strong></sup></td>
-          <td>PQ <sup><strong><a href="#note1-8"> [1-8] </a></strong></sup></td>
-          <td>小型公司 2086 <sup><strong><a href="#note1-9"> [1-9] </a></strong></sup></td>
-          <td>中國華人民<sup><strong><a href="#note1-10">共和國</a></strong></sup></td>
+          <td>HDR10 <sup><strong><a href="#note1-1">[1-1]</a></strong></sup></td>
+          <td>10</td>
+          <td>有限的</td>
+          <td>BT.2020 <sup><strong><a href="#note1-4">[1-4]</a></strong></sup></td>
+          <td>Y'C'<sub>B</sub>C'<sub>R</sub> <sup><strong><a href="#note1-5">[1-5]</a></strong></sup></td>
+          <td>PQ <sup><strong><a href="#note1-8">[1-8]</a></strong></sup></td>
+          <td>SMPTE 2086 <sup><strong><a href="#note1-9">[1-9]</a></strong></sup></td>
+          <td>CAE 861.3 <sup><strong><a href="#note1-10">[1-10]</a></strong></sup></td>
           <td></td>
         </tr>
         <tr>
-          <td>杜比視界8.1 <sup><strong><a href="#note1-2"> [1-2]</a></strong></sup></td>
-          <td>+10</td>
-          <td>有限</td>
-          <td>二零零二年<sup><strong><a href="#note1-4"> [1 至 4] </a></strong></sup></td>
-          <td>那就是<sub> B </sub> C <sub> R </sub><sup><strong><a href="#note1-5"> [1-5] </a></strong></sup></td>
-          <td>PQ <sup><strong><a href="#note1-8"> [1-8] </a></strong></sup></td>
-          <td>小型公司 2086 <sup><strong><a href="#note1-9"> [1-9] </a></strong></sup></td>
-          <td>中國華人民<sup><strong><a href="#note1-10">共和國</a></strong></sup></td>
-          <td>生產<sup><strong><a href="#note1-11">製程</a></strong></sup></td>
+          <td>杜比視界8.1 <sup><strong><a href="#note1-2">[1-2]</a></strong></sup></td>
+          <td>10</td>
+          <td>有限的</td>
+          <td>BT.2020 <sup><strong><a href="#note1-4">[1-4]</a></strong></sup></td>
+          <td>Y'C'<sub>B</sub>C'<sub>R</sub> <sup><strong><a href="#note1-5">[1-5]</a></strong></sup></td>
+          <td>PQ <sup><strong><a href="#note1-8">[1-8]</a></strong></sup></td>
+          <td>SMPTE 2086 <sup><strong><a href="#note1-9">[1-9]</a></strong></sup></td>
+          <td>CAE 861.3 <sup><strong><a href="#note1-10">[1-10]</a></strong></sup></td>
+          <td>SMPTE 2094-10 <sup><strong><a href="#note1-11">[1-11]</a></strong></sup></td>
         </tr>
         <tr>
-          <td>杜比視界5 <sup><strong><a href="#note1-3"> [1-3]</a></strong></sup></td>
-          <td>+10</td>
-          <td>充分</td>
-          <td>二零零二年<sup><strong><a href="#note1-4"> [1 至 4] </a></strong></sup></td>
-          <td>我知道了<sub>Ť</sub> C <sub> p </sub><sup><strong><a href="#note1-6"> [1-6]</a></strong></sup></td>
-          <td>PQ <sup><strong><a href="#note1-8"> [1-8] </a></strong></sup></td>
+          <td>杜比視界5 <sup><strong><a href="#note1-3">[1-3]</a></strong></sup></td>
+          <td>10</td>
+          <td>滿的</td>
+          <td>BT.2020 <sup><strong><a href="#note1-4">[1-4]</a></strong></sup></td>
+          <td>我知道了<sub>噸</sub>C<sub>p</sub> <sup><strong><a href="#note1-6">[1-6]</a></strong></sup></td>
+          <td>PQ <sup><strong><a href="#note1-8">[1-8]</a></strong></sup></td>
           <td></td>
           <td></td>
-          <td>生產<sup><strong><a href="#note1-11">製程</a></strong></sup></td>
+          <td>SMPTE 2094-10 <sup><strong><a href="#note1-11">[1-11]</a></strong></sup></td>
         </tr>
     </table>
     <h3>注意事項</h3>
     <ul>
-      <li id="note1-1"><sup><strong>[1-1]</strong></sup> HLG10，PQ10和HDR10指的是由<a href="https://ultrahdforum.org/guidelines/">UltraHD論壇指南</a></li>
-      <li id="note1-2"><sup><strong>[1-2]</strong></sup> DolbyVision 8.1是指DolbyVision Profile 8，其信號兼容性ID為1，由<a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">DolbyVision配置文件和級別</a>規範</li>
-      <li id="note1-3"><sup><strong>[1-3]</strong></sup> DolbyVision 5是指DolbyVision Profile 5，由<a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">DolbyVision配置文件和級別</a>規範</li>
-      <li id="note1-4"><sup><strong>[1-4]</strong></sup> BT.2020是指由<a href="https://www.itu.int/rec/R-REC-BT.2020/en">ITU-R建議書BT.2020 </a></li>
-      <li id="note1-5"><sup><strong>[1-5]</strong></sup> Y'C' <sub>乙</sub> C' <sub> [R</sub>指Y'C' <sub>乙</sub> C' <sub> [R</sub>定義的非恆定亮度色彩空間<a href="https://www.itu.int/rec/R-REC-BT.2020/en">ITU-R建議書BT.2020 </a></li>
-      <li id="note1-6"><sup><strong>[1-6]</strong></sup>我知道了<sub>Ť</sub> C <sub> p</sub>指IC <sub>Ť</sub> C <sub> p</sub>定義的色彩空間<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R建議書BT.2100 </a></li>
-      <li id="note1-7"><sup><strong>[1-7]</strong></sup> HLG是指由以下項定義的混合對數伽馬（HLG）傳遞函數<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R建議書BT.2100 </a></li>
-      <li id="note1-8"><sup><strong>[1-8]</strong></sup> PQ是指通過以下方式定義的感知量化器（PQ）傳遞函數<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R建議書BT.2100 </a></li>
-      <li id="note1-9"><sup><strong>[1-9]</strong></sup> SMPTE 2086指的是由<a href="https://ieeexplore.ieee.org/document/8353899">SMPTE ST 2086</a></li>
-      <li id="note1-10"><sup><strong>[1-10]</strong></sup> CAE 861.3指的是由<a href="https://standards.cta.tech/apps/group_public/project/details.php?project_id=185">CAE 861.3</a></li>
-      <li id="note1-11"><sup><strong>[1-11]</strong></sup> SMPTE 2094-10引用了DolbyVision動態元數據，由<a href="https://ieeexplore.ieee.org/document/7513370">SMPTE ST 2094-10</a></li>
+      <li id="note1-1"><sup><strong>[1-1]</strong></sup> HLG10、PQ10 和 HDR10 是指由<a href="https://ultrahdforum.org/guidelines/">超高清論壇指南</a></li>
+      <li id="note1-2"><sup><strong>[1-2]</strong></sup> DolbyVision 8.1 是指 DolbyVision Profile 8，信號兼容性 ID 為 1，由<a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">DolbyVision 配置文件和級別</a>規格</li>
+      <li id="note1-3"><sup><strong>[1-3]</strong></sup> DolbyVision 5 是指 DolbyVision Profile 5，由<a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">DolbyVision 配置文件和級別</a>規格</li>
+      <li id="note1-4"><sup><strong>[1-4]</strong></sup> BT.2020 指的是由以下定義的比色系統<a href="https://www.itu.int/rec/R-REC-BT.2020/en">ITU-R 建議書BT.2020</a></li>
+      <li id="note1-5"><sup><strong>[1-5]</strong></sup> Y'C'<sub>B</sub>C'<sub>R</sub> 指的是 Y'C'<sub>B</sub>C'<sub>R</sub> 由以下定義的非恆定亮度顏色空間<a href="https://www.itu.int/rec/R-REC-BT.2020/en">ITU-R 建議書BT.2020</a></li>
+      <li id="note1-6"><sup><strong>[1-6]</strong></sup> 我知道了<sub>噸</sub>C<sub>p</sub> 指IC<sub>噸</sub>C<sub>p</sub> 顏色空間定義為<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R 建議書BT.2100</a></li>
+      <li id="note1-7"><sup><strong>[1-7]</strong></sup> HLG 是指由以下定義的混合對數伽瑪 (HLG) 傳遞函數<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R 建議書BT.2100</a></li>
+      <li id="note1-8"><sup><strong>[1-8]</strong></sup> PQ 是指由以下定義的感知量化器 (PQ) 傳遞函數<a href="https://www.itu.int/rec/R-REC-BT.2100/en">ITU-R 建議書BT.2100</a></li>
+      <li id="note1-9"><sup><strong>[1-9]</strong></sup> SMPTE 2086 是指由定義的主顯示特性<a href="https://ieeexplore.ieee.org/document/8353899">SMPTE ST 2086</a></li>
+      <li id="note1-10"><sup><strong>[1-10]</strong></sup> CAE 861.3 是指由定義的內容光級參數<a href="https://standards.cta.tech/apps/group_public/project/details.php?project_id=185">CAE 861.3</a></li>
+      <li id="note1-11"><sup><strong>[1-11]</strong></sup> SMPTE 2094-10 是指由定義的 DolbyVision 動態元數據<a href="https://ieeexplore.ieee.org/document/7513370">SMPTE ST 2094-10</a></li>
     </ul>
     <p>可在以下文檔中找到有關在視頻編解碼器比特流，容器格式以及DASH和HLS流傳輸系統中傳輸此類格式的詳細信息：
     <ul>
       <li><a href="https://www.itu.int/rec/T-REC-H.265">HEVC標準</a></li>
       <li><a href="https://ultrahdforum.org/guidelines/">UltraHD論壇指南</a></li>
-      <li><a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">DolbyVision配置文件和級別</a></li>
+      <li><a href="https://www.dolby.com/us/en/technologies/dolby-vision/dolby-vision-profiles-levels.pdf">杜比視界（DolbyVision）配置文件和級別</a></li>
       <li><a href="https://developer.apple.com/documentation/http_live_streaming/hls_authoring_specification_for_apple_devices">適用於Apple設備的HLS創作準則</a></li>
       <li><a href="https://dashif.org/docs/DASH-IF-IOP-v4.0-clean.pdf">實施準則：DASH-IF互操作性點</a></li>
       <li><a href="https://cdn.cta.tech/cta/media/media/resources/standards/pdfs/cta-5001-b-final_v2.pdf">CTA-5001-B：Web應用程序視頻生態系統：內容規格</a></li>
@@ -759,27 +116,27 @@ Brightcove
   </section>
   <section class="bcls-section">
     <h2 id="supported_operations">支持的運營</h2>
-    <p>Zencoder當前僅執行<em>直接轉碼操作</em> HDR格式的視頻。也就是說，如果輸入視頻經過顏色分級並以特定的HDR格式編碼，則相同的顏色分級和與HDR格式相關的元數據將保留在輸出中。</p>
+    <p>Zencoder 目前僅執行 <em>直接轉碼操作</em> HDR 格式的視頻。也就是說，如果輸入視頻經過顏色分級並以特定的HDR格式編碼，則相同的顏色分級和與HDR格式相關的元數據將保留在輸出中。</p>
     <p>當前不支持不同類型的HDR格式之間的轉換或標準動態範圍（SDR）和HDR格式之間的轉換。原則上，HDR格式之間的轉換是不平凡的操作，可能會影響藝術意圖和/或引入可見的偽像。由於這些原因，我們建議您在後期製作中進行此類轉換操作。</p>
-    <p>目前，要以HDR格式對視頻進行編碼，需要使用HEVC視頻編解碼器，並在Main10配置文件中運行，並使用10位像素。必須為所有HDR輸出定義此類編解碼器，配置文件和位深度參數。目前不支持將其他編解碼器/配置文件/位深度與HDR格式一起使用。</p>
+    <p>目前，以HDR格式對視頻進行編碼需要使用HEVC視頻編解碼器，並在Main10配置文件中運行，並使用10位像素。必須為所有HDR輸出定義此類編解碼器，配置文件和位深度參數。目前不支持將其他編解碼器/配置文件/位深度與HDR格式一起使用。</p>
     <p>以DolbyVision格式對視頻進行編碼還需要使用ISOBMFF（MP4）容器格式進行輸出。當前不支持將其他容器格式與DolbyVision一起使用。</p>
     <p>通過使用生成的靜態和動態輸出均支持Zencoder中的HDR格式編碼<a href="https://zencoder.support.brightcove.com/encoding-guides/cae-guide.html">Brightcove上下文感知編碼（CAE）</a>技術。CAE技術的使用可實現更有效的編碼，因此建議<a href="https://ultrahdforum.org/guidelines/">UltraHD論壇指南</a>用於UltraHD / HDR內容的編碼。 </p>
   </section>
   <section class="bcls-section">
-    <h2 id="requirements">輸入文件要求</h2>
+    <h2 id="requirements">輸入文件的要求</h2>
 
     <p>輸入的視頻文件應該是高質量的母帶或中間字母，帶有適當的顏色漸變的HDR視覺內容，並提供描述所用HDR格式所需的所有必要元數據。</p>
     <p>此類文件的示例可能是：</p>
     <ul>
       <li>符合HLG10，PQ10和HDR10的視頻流，使用HEVC編解碼器編碼，並在此類流中攜帶所有必要的HDR信息</li>
-      <li>後期製作的幀內編碼夾層（例如，OP1a MXF中的Apple ProRes 4444，Avid DNxHD或JPEG 2000（J2K）），以及有關正在使用的HDR格式類型和任何其他元數據的附加信息（例如，主顯示屏和內容亮度）元數據）來描述它</li>
-      <li>HEVC編碼的DolbyVision流，以及帶有相關動態元數據的“ RPU”文件。</li>
+      <li>後期製作的幀內編碼夾層（例如，OP1a MXF中的Apple ProRes 4444，Avid DNxHD或JPEG 2000（J2K）），以及有關正在使用的HDR格式類型和任何其他元數據的附加信息（例如，主顯示和內容亮度）元數據）來描述它</li>
+      <li>HEVC編碼的DolbyVision流，以及帶有相關動態元數據的“RPU"文件。</li>
     </ul>
   </section>
   <section class="bcls-section">
     <h2 id="specifying_hdr_format_parameters">指定HDR格式參數</h2>
 
-    <p>如果輸入夾層包含與HDR格式相關聯的所有元數據，則可以使用以下命令將所有此類信息傳播到輸出：<a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#preserve_hdr_metadata"><code translate="No">preserve_hdr_metadata</code></a>參數。</p>
+    <p>如果輸入夾層包含與HDR格式關聯的所有元數據，則可以通過使用<a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#preserve_hdr_metadata"><code translate="No">preserve_hdr_metadata</code></a>範圍。</p>
     <p>下面的示例說明了此方法：</p>
     <pre class="line-numbers"><code class="language-json" translate="No">{ 
   "input": "s3://mybucket/hdr_master.mp4", 
@@ -799,7 +156,7 @@ Brightcove
       <caption class="bcls-caption--table">hdr_format細節</caption>
       <thead class="bcls-table__head">
         <tr>
-          <th rowspan="2">HDR 格式</th>
+          <th rowspan="2">HDR格式</th>
           <th colspan="4">Zencoder API參數/值</th>
         </tr>
         <tr>
@@ -871,7 +228,7 @@ Brightcove
 }
 </code></pre>
     <p>當使用編解碼器（例如Apple ProRes 4444，Avid DNxHD或OP1a MXF中的JPEG 2000（J2K）等）與後期製作的夾層金屬一起使用時，此方法是合適的。</p>
-    <p>同樣，在對DolbyVision內容進行代碼轉換時，與DolbyVision Content相關的動態元數據（“ RPU”文件）可以通過使用<a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#dolby_vision_rpu_url"><code translate="No">dolby_vision_rpu_url</code></a>參數：</p>
+    <p>同樣，在對DolbyVision內容進行代碼轉換時，與DolbyVision內容相關聯的動態元數據（“RPU"文件）可以通過使用以下方式進行外部通信：<a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html#dolby_vision_rpu_url"><code translate="No">dolby_vision_rpu_url</code></a>範圍：</p>
 <pre class="line-numbers"><code class="language-json" translate="No">{ 
   "input": "s3://mybucket/dv5_master.mp4", 
   "outputs": [ 
@@ -889,9 +246,9 @@ Brightcove
   <section class="bcls-section">
     <h2 id="specifying_hdr_format_parameters_with_cae">使用CAE指定HDR格式參數</h2>
     <p>
-      使用時<a href="/encoding-guides/cae-guide.html">Brightcove上下文感知編碼（CAE）</a>技術，可以將所有與編解碼器和HDR格式相關的參數指定為
+      使用時<a href="/encoding-guides/cae-guide.html">Brightcove上下文感知編碼（CAE）</a>技術，所有與編解碼器和HDR格式相關的參數都可以指定為
       <ul>
-        <li>標記為的輸出參數<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#dynamic_profile_rendition"><code translate="No">dynamic_profile_rendition</code></a>， 要么</li>
+        <li>標記為的輸出參數<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#dynamic_profile_rendition"><code translate="No">dynamic_profile_rendition</code></a>， 或者</li>
         <li>的參數<a href="/encoding-settings/general/encoding-settings-job.html#dynamic_profile_options"><code translate="No">dynamic_profile_options</code></a>目的</li>
       </ul>
     </p>
@@ -918,131 +275,3 @@ Brightcove
 }</code></pre>
   </section>
 </article>
-<!-- complete bootstrap layout -->
-    </div>
-    <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">頁面內容</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
-      </nav>
-      
-    </div>
-  </div>
-</div>
-
-<hr>
-<footer class="bcls-footer" role="contentinfo">  <div class="row">
-    <div class="region region-footer-top-center col-md-12">
-      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-
-        <h2>布萊特灣支援</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://status.brightcove.com">系統狀態</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
-          </li>
-          <li>
-            <a href="https://support.brightcove.com/">文獻資料</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-        <h2>訓練</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
-          </li>
-          <li>
-            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
-          </li>
-          <li>
-            <a href="https://university.brightcove.com/">布萊特灣大學</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-        <h2>Brightcove</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://www.brightcove.com">亮麗</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region region-footer-bottom-center col-md-12">
-      <div class="bcls-copyright footer-menu">
-        <table>
-          <tr>
-            <td>
-              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
-            </td>
-            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
-            <td>
-              <div class="gf-links-cols footer-menu">
-                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-      
-  var searchBox = sajari.init({
-    mode: "search-box",
-    project: "1588255093746585379", // Set this to your project.
-    collection: "brightcove-documenation", // Set this to your collection.
-    instantPipeline: "autocomplete", // Pipeline used as you type
-    inputPlaceholder: "Search", // Input element placeholder
-    maxSuggestions: 5, // Maximum number of suggestions to show
-    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-  });
-  
-    searchBox("sub", "pipeline.search-sent", function (_, query) {
-      window.location = "/search.html?q=" + encodeURIComponent(query.q);
-    });
-  
-
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
-  <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
-  <script src="/assets/js/feedback.js"></script>
-  
-  <script src="/assets/js/sajari-search-foot.js"></script>
-  
-  <!-- <script src="/assets/js/sajari-index.js"></script> -->
-  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
-</body>
-
-</html>

@@ -1,697 +1,53 @@
-﻿<!doctype html>
-<html lang="zh-TW">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本主題包含有關與分段流相關的編碼設置的詳細信息。">
-
-  <title>分段流設置</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
-  <script src="/assets/js/sajari-head.js"></script>
-</head>
-
-<body class="body">
-
-<header>
-  <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="產品標誌" style="max-height: 100px;max-width: 232px;"/></a>
-<!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
-
-<script>
-/* <![CDATA[ */
-function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-/* ]]> */
-</script>
-
-Brightcove 
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
-    
-  </div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb arr-right">
-      
-      <li class="breadcrumb-item"><a href="/">首頁</a></li>
-      
-      
-      
-      <li class="breadcrumb-item"><a href="/encoding-settings/general-audio-video/">音訊/視訊設定</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">分段流設置</li>
-    </ol>
-  </nav>
-</header>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        				<select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-					<option value="">其他布萊特灣文件</option>
-					
-						
-							<option value="https://support.brightcove.com">文件首頁</option>
-						
-					
-						
-							<option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
-						
-					
-						
-							<option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
-						
-					
-						
-							<option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
-						
-					
-						
-							<option value="https://engage.support.brightcove.com">布萊特灣參與</option>
-						
-					
-						
-							<option value="https://live.support.brightcove.com">Brightcove Live</option>
-						
-					
-						
-							<option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
-						
-					
-						
-							<option value="https://ssai.support.brightcove.com">布萊特灣</option>
-						
-					
-						
-							<option value="https://social.support.brightcove.com">布萊特灣社會</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
-						
-					
-						
-							<option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
-						
-					
-						
-							<option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
-						
-					
-						
-							<option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
-						
-					
-						
-							<option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
-						
-					
-						
-							<option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
-						
-					
-						
-							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
-						
-					
-				</select>
-						<nav class="sidenav" id="side_nav">
-
-          
-            
-            <h5><a href="/index.html">首頁</a></h5>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/getting-started/index.html">開始使<strong>用 + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/getting-started/overview-zencoder.html">概述</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/quick-start-zencoder.html">快速入門</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/getting-api-key.html">取得 API 金鑰</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/output-settings.html">輸出設定</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/creating-multiple-outputs.html">建立多個輸出</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/general-information/index.html">一般資訊<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/general-information/faq-basics.html">基本概念</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-codecs-and-formats.html">轉碼器和格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-encoding.html">編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-file-transfers.html">檔案傳輸</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-zencoder-pricing.html">齊編碼器定價</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-rate-limiting.html">速率限制</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html">支援的視訊和音訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/overview-context-aware-encoding.html">概述：上下文感知編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">視訊完成時收到通知</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Zencoder 如何在上傳失敗時儲存檔案</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-s3.html">使用 ZenCoder 與 S3 搭配使用</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-azure.html">在 Azure 中使用贊編碼器</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-google-cloud-platform.html">使用 Zencoder 與谷歌雲存儲</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/references/index.html">參考資料<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/references/reference.html">API 參考</a></li>
-                  
-                
-                  
-                    <li><a href="/references/known-issues.html">已知問題</a></li>
-                  
-                
-                  
-                    <li><a href="/references/release-notes.html">產品更新</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-settings/index.html">編碼設定<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general/index.html">一般設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-job.html">工作設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">一般輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/cae-settings.html">CAE 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">條件輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-notifications.html">通知設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general-audio-video/index.html">音訊/視訊設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">音訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">音訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video.html">視訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html">視訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">廣播設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">影格速率設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">匯率控制設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html">解析度設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html">分段串流設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html">轉換設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/formats-codecs/index.html">格式和轉碼器設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">格式與轉碼器設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">AAC 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">FLV 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">HDR 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">H.264 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html">MP4 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html">VP6 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/assets/index.html">媒體資產設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">註解設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">剪輯片段設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-thumbnails.html">縮圖設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-watermarks.html">浮水印設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/content-protection/index.html">內容防護設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">加密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">解密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">DRM 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/sources-destinations/index.html">來源/目的地設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html">S3 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">阿斯佩拉設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-guides/index.html">編碼指南<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">音訊對應指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/as11-mxf.html">作為 11 毫米 x F 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/avc-intra-guide.html">AVC 內部指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/cae-guide.html">CAE 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html">翻譯指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH 串流和播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/h264-advanced-guide.html">H.264 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hdr10-video-output.html">支援的 HDR 視訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hevch265-guide.html">HEVC/H.265 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/highwinds-smil.html">高風 SMIL 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/html5-encoding.html">HTML5 編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HLS 串流與播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">使用分散式 MP4 的 HLS </a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/iosmobile-encoding.html">Io/行動裝置編碼指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/microsoft-smooth-streaming.html">微軟流暢的串流</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html">以品質為基礎的串流編碼模式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp6-advanced-guide.html">VP6 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp9-guide.html">VP9 指南</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">錯誤/疑難排解<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/error-troubleshooting/problems.html">常見問題</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/region-outages.html">區域中斷</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html">重試失敗工作的時機</a></li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/error-troubleshooting/error-codes/index.html">錯誤代碼<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkA 大型儲存空間檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">總和檢查符合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">尺寸標註小錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">下載存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">下載失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">下載時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">檔案外部建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">檔案永久移動程式錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">不準確的持續時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">與動態設定檔不相容錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">找到輸入檔案</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">無效存取金鑰存取器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">無效的音訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">無效的解碼器組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">下載無效的檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">無效密碼設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">無效的檔案路徑</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">無效格式化程式碼驗證</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">無效的影格速率錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">使用者名稱無效密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">無效的視訊標準錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">無效的視訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-nomediaerror.html">無媒體錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html">快速時間參考錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html">遠端伺服器問題錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html">驗證失敗錯誤錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html">RTMP 最大流量已設定</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html">RTMP串流名稱已準備好使用</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html">S3 代理程式創建者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-segmentingerror.html">分段錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html">跳過來源錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-thumbnailerror.html">縮圖錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transcodingerror.html">轉碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html">移轉። 無效群組清單錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html">轉移። 無效的莊家</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html">截斷檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html">無法建立動態設定檔錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html">下載問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html">所有人都可以看到</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html">圖層結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html">建議的後代結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html">受到的結果錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html">關於載入問題的問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html">所有結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html">無法讀取檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html">不支援的編碼器</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html">不支援的編碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html">不支援密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html">不支援的轉換碼組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html">上傳存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html">上傳失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html">上傳伺服器無法建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html">上傳時間</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-workertimeouterror.html">工作者時間錯誤</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/integration/index.html">整合<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/integration/faq-integration-libraries.html">整合程式庫</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/100-integration-reliability.html">100% 整合可靠性</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/test-jobs-and-integration-mode.html">測試工作和整合模式</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/using-read-only-api-keys.html">使用唯讀 API 金鑰</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    
-                  
-                
-                  
-                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
-                  
-                
-                  
-                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
-                  
-                
-                  
-                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
-                  
-                
-              </ul>
-            
-          
-      </nav>
-    </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
-
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
-
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">頁面內容</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
-<!-- open in new tab/window -->
-<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
-
-
-
-  
-    
-
-
-<h1>分段流設置</h1>
+---
+title:分段流設置
+description:本主題包含與分段流相關的編碼設置的詳細信息。
+parent: Audio/Video Settings 
+grandparent: Encoding Settings
+---
+ <h1>{{ page.title }}</h1>
 <article class="bcls-article">
-  <summary>本主題包含有關與分段流相關的編碼設置的詳細信息。</summary>
+  <summary>{{ page.description }}</summary>
 
   <section class="bcls-section">
-    <h2 id="Overview">概覽</h2>
+    <h2 id="Overview">概述</h2>
 
     <p>Zencoder支持各種形式的自適應流和分段流。</p>
 
     <ul>
       <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HTTP實時（分段）流和播放列表</a></li>
-      <li><a href="/encoding-guides/microsoft-smooth-streaming.html">微軟流暢的串流</a></li>
+      <li><a href="/encoding-guides/microsoft-smooth-streaming.html">Microsoft流暢串流</a></li>
       <li><a href="/encoding-guides/highwinds-smil.html">高風SMIL</a></li>
     </ul>
     <p>每種流格式都使用下面列出的API選項的不同子集。有關更多信息，請參閱每種流類型的指南。</p>
 
-    <aside class="bcls-aside bcls-aside--information">注意：某些播放器無法處理音頻和視頻流長度相差一段片段以上的情況。如果您遇到這種情況，請嘗試使用較短的區段長度。</aside>
-    <p><strong>注意事項</strong></p>
+    <aside class="bcls-aside bcls-aside--information">注意：有些播放器不處理音頻和視頻流長度相差超過一個段的持續時間的情況。如果遇到這種情況，請嘗試使用較短的段長度。</aside>
+    <p><strong>筆記</strong></p>
 
     <ul>
       <li>作業必須至少具有一個標准或分段輸出；創建僅具有播放列表輸出的作業將不起作用。</li>
-      <li>播放列表輸出將忽略大多數輸出選項，但<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#url">網址</a>，<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#base-url"><code translate="No">base_url</code></a>，<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#filename"><code translate="No">filename</code></a>，<a href="#streams"><code translate="No">streams</code></a>，<a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#public"><code translate="No">public</code></a>和<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#type"><code translate="No">type</code></a>。</li>
-      <li>如果分段輸出被上傳到臨時存儲，它將被上傳為<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package-format"> ZIP 歸檔</a>。</li>
+      <li>播放列表輸出將忽略大多數輸出選項，但<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#url">網址</a>，<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#base-url"><code translate="No">base_url</code></a>，<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#filename"><code translate="No">filename</code></a>，<a href="#streams"><code translate="No">streams</code></a>，<a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html#public"><code translate="No">public</code></a>， 和<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#type"><code translate="No">type</code></a>。</li>
+      <li>如果將分段輸出上傳到臨時存儲，則它將作為<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#package-format">ZIP檔案</a>。</li>
     </ul>
   </section>
   <section class="bcls-section">
-    <h2 id="streaming_delivery_format" translate="No">streaming_delivery_format</h2>
+    <h2 id="streaming_delivery_format" translate="No">串流 _ 交付 _ 格式</h2>
     <code translate="No">streaming_delivery_format:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>有效值：</strong>短跑</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>短跑</p>
+    <p><strong>例子：</strong>短跑</p>
 
     <p><strong>描述：</strong></p>
 
     <p>設置將使用特定的流配置（包括必需的清單，目錄結構或其他打包）傳遞的輸出的格式/協議。</p>
 
-    <p>對於“破折號”輸出，這還將默認的segment_seconds更改為2，強制固定的關鍵幀間隔，包括MPD清單，並創建帶有初始化文件和段文件的目錄結構。</p>
+    <p>對於 '破折號' 輸出，這也將將默認的 segment_秒更改為 2，強制固定的關鍵幀間隔，包含一個 MPD 清單，並創建一個包含初始化和段文件的目錄結構。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -707,31 +63,31 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#streaming_delivery_profile"> stream_delivery_profile</a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="streaming_delivery_profile" translate="No">streaming_delivery_profile</h2>
+    <h2 id="streaming_delivery_profile" translate="No">串流 _ 交付 _ 設定檔</h2>
     <code translate="No">streaming_delivery_profile:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
-    <p><strong>默認：</strong>生活</p>
+    <p><strong>默認：</strong>居住</p>
 
     <p><strong>有效值：</strong>直播，hbbtv_1.5，on_demand</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>生活</p>
+    <p><strong>例子：</strong>居住</p>
 
     <p><strong>描述：</strong></p>
 
     <p>設定串流傳送格式的設定檔，確保選取了與設定檔相容的選項。有效選項取決於所選的<a href="#streaming_delivery_format"><code translate="No">streaming_delivery_format</code></a>。</p>
 
-    <p>對於<code translate="No">dash</code>輸出，當前支持的配置文件是：</p>
+    <p>為了<code translate="No">dash</code>輸出，當前支持的配置文件是：</p>
 
     <ul>
-      <li>直播-將設置<code translate="No">DASH</code>配置文件為“ urn：mpeg：dash：profile：isoff-live：2011”並使用一個<code translate="No">SegmentTemplate</code>每個<code translate="No">AdaptationSet</code>。對於DRM，它將使用8字節的IV，對於<code translate="No">PlayReady</code>將使用1.1版，包括媒體中的PSSH原子。</li>
-      <li>hbbtv_1.5-將設置<code translate="No">DASH</code>配置文件到“ urn：hbbtv：dash：profile：isoff-live：2012”，並包含音頻和視頻表示形式的必需屬性。對於DRM，它將使用16字節的IV，對於<code translate="No">PlayReady</code>將使用1.0版，但不包括PSSH原子。</li>
-      <li>on_demand-將設置<code translate="No">DASH</code>配置文件為“ urn：mpeg：dash：profile：isoff-on-demand：2011”，並將媒體編碼為每個流的單個碎片文件，而不是對其進行分段。否則與實時配置文件相同。</li>
+      <li>直播-將設置<code translate="No">DASH</code>配置文件為“urn：mpeg：dash：profile：isoff-live：2011"並使用一個<code translate="No">SegmentTemplate</code>對於每個<code translate="No">AdaptationSet</code>。對於DRM，它將使用8字節的IV，對於<code translate="No">PlayReady</code>將使用1.1版，包括媒體中的PSSH原子。</li>
+      <li>hbbtv_1.5-將設置<code translate="No">DASH</code>配置文件到“urn：hbbtv：dash：profile：isoff-live：2012"，並包括音頻和視頻表示形式的必需屬性。對於DRM，它將使用16字節的IV，對於<code translate="No">PlayReady</code>將使用1.0版，但不包括PSSH原子。</li>
+      <li>on_demand-將設置<code translate="No">DASH</code>配置文件為“urn：mpeg：dash：profile：isoff-on-demand：2011"，並將媒體編碼為每個流的單個碎片文件，而不是對其進行分段。否則與實時配置文件相同。</li>
     </ul>
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -748,18 +104,18 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#streaming_delivery_format"><code translate="No">streaming_delivery_format</code></a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="playlist_format" translate="No">playlist_format</h2>
+    <h2 id="playlist_format" translate="No">播放清單格式 (_L)</h2>
     <code translate="No">playlist_format:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>有效值：</strong><code translate="No">dash</code>，<code translate="No">mpd</code>，<code translate="No">hls</code>，<code translate="No">m3u</code>，<code translate="No">m3u8</code>，<code translate="No">ism</code>，<code translate="No">mss</code>，<code translate="No">highwinds</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>短跑</p>
+    <p><strong>例子：</strong>短跑</p>
 
     <p><strong>描述：</strong></p>
 
@@ -777,24 +133,24 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="segment_seconds" translate="No">segment_seconds</h2>
+    <h2 id="segment_seconds" translate="No">分段 _ 秒</h2>
     <code translate="No">segment_seconds:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
-    <p><strong>默認：</strong>+10</p>
+    <p><strong>默認：</strong>10</p>
 
-    <p><strong>有效值：</strong>1.0到3600.0之間的數字；值小於2.0僅在以下情況下允許<a href="#byte_range_segmenting"><code translate="No">byte_range_segmenting</code></a>已啟用。因為發現很短的段會導致播放問題，所以最終段可能比指定的值長。</p>
+    <p><strong>有效值：</strong>1.0到3600.0之間的數字；小於2.0的值僅在以下情況下允許<a href="#byte_range_segmenting"><code translate="No">byte_range_segmenting</code></a>已啟用。因為發現很短的片段會導致播放問題，所以最後的片段可能比指定的值長。</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>8</p>
+    <p><strong>例子：</strong>8</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>設置分段輸出中每個分段的最大持續時間。</p>
+    <p>設定分段輸出中每個區段的最大持續時間。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -808,30 +164,30 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="alternate_audio" translate="No">alternate_audio</h2>
+    <h2 id="alternate_audio" translate="No">替代音訊 (_R)</h2>
     <code translate="No">alternate_audio:Hash</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>有效值：</strong>備用音頻組的哈希，每個哈希組是音頻流再現哈希的數組</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
     <p>提供一組備用音頻流，用於<code translate="No">HLS</code>播放列表。<strong>需要<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>等於或大於4。</strong></p>
 
-    <p>此選項將插入<code translate="No">EXT-X-MEDIA</code>標記到播放列表中。如果<code translate="No">name</code>未設置，則將根據給定的名稱生成<code translate="No">language</code>。</p>
+    <p>此選項將插入<code translate="No">EXT-X-MEDIA</code>標記到播放列表中。如果<code translate="No">name</code>未設置，則將基於給定的名稱生成<code translate="No">language</code>。</p>
 
     <p><strong>備用音頻再現的有效選項</strong></p>
 
     <ul>
-      <li><strong><code translate="No">language</code>：</strong>音軌語言的ISO 639代碼，例如“ en”，“ es”或“ zh”。</li>
+      <li><strong><code translate="No">language</code>：</strong>音軌語言的ISO 639代碼，例如“en"，“es"或“zh"。</li>
       <li><strong><code translate="No">name</code>（可選的）：</strong>備用音頻組的名稱。如果未設置名稱，則默認為語言名稱。</li>
-      <li><strong><code translate="No">path</code>（可選的）：</strong>此音頻呈現的M3U8播放列表的可選路徑。如果未設置路徑，則此替代音頻流將描述源流中包含的音頻。</li>
-      <li><strong><code translate="No">source</code>（可選的）：</strong>同一作業的媒體輸出上的標籤。這可用於為使用此音頻流的音效設置編解碼器。</li>
+      <li><strong><code translate="No">path</code>（可選的）：</strong>此音頻再現的M3U8播放列表的可選路徑。如果未設置路徑，則此替代音頻流將描述源流中包含的音頻。</li>
+      <li><strong><code translate="No">source</code>（可選的）：</strong>同一作業的媒體輸出上的標籤。這可用於為使用此音頻流的演繹設置編解碼器。</li>
     </ul>
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -864,16 +220,16 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="streams" translate="No">streams</h2>
+    <h2 id="streams" translate="No">流</h2>
     <code translate="No">streams:Array</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>有效值：</strong>包含播放列表流信息的哈希數組</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
@@ -900,22 +256,22 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="path" translate="No">path</h2>
+    <h2 id="path" translate="No">路徑</h2>
     <code translate="No">path:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
     <p><strong>有效值：</strong>包含清單文件的絕對或相對路徑的字符串</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
     <p>指定流清單文件的路徑。</p>
 
-    <p><em>注意：每個流都需要<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HLS</code></a>，<a href="/encoding-guides/microsoft-smooth-streaming.html"> Microsoft流暢串流</a>和<a href="/encoding-guides/highwinds-smil.html">高風SMIL</a>播放列表。</em></p>
+    <p><em>注意：每個流都需要<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HLS</code></a>，<a href="/encoding-guides/microsoft-smooth-streaming.html"> Microsoft流暢串流</a>， 和<a href="/encoding-guides/highwinds-smil.html">高風SMIL</a>播放列表。</em></p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -938,24 +294,24 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="bandwidth" translate="No">bandwidth</h2>
+    <h2 id="bandwidth" translate="No">頻寬</h2>
     <code translate="No">bandwidth:Integer</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
     <p><strong>有效值：</strong>正整數值（Kbps）</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>500</p>
+    <p><strong>例子：</strong>500</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>指定播放列表流的帶寬。覆蓋從<a href="#streaming_source">資源</a>。</p>
+    <p>指定播放列表流的帶寬。覆蓋從<a href="#streaming_source">來源</a>。</p>
 
-    <p><em>注意：每個流都需要<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HLS</code></a>和<a href="/encoding-guides/highwinds-smil.html">高風SMIL</a>播放列表，除非<a href="#streaming_source">資源</a>提供。</em></p>
+    <p><em>注意：每個流都需要<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HLS</code></a>和<a href="/encoding-guides/highwinds-smil.html">高風SMIL</a>播放列表，除非<a href="#streaming_source">來源</a>提供。</em></p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -978,20 +334,20 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="resolution" translate="No">resolution</h2>
+    <h2 id="resolution" translate="No">解析度</h2>
     <code translate="No">resolution:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
     <p><strong>有效值：</strong>包含寬度和高度的字符串為：800x600</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>指定播放列表流的分辨率。覆蓋從<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#source"><code translate="No">source</code></a>。</p>
+    <p>指定播放列表流的分辨率。覆蓋從a確定的分辨率<a href="/encoding-settings/general/encoding-settings-general-output-settings.html#source"><code translate="No">source</code></a>。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">
@@ -1016,16 +372,16 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="codecs" translate="No">codecs</h2>
+    <h2 id="codecs" translate="No">轉碼器</h2>
     <code translate="No">codecs:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
     <p><strong>有效值：</strong>包含HTML5格式的編解碼器的字符串，例如：mp4a.40.2</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
@@ -1054,20 +410,20 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="audio" translate="No">audio</h2>
+    <h2 id="audio" translate="No">音訊</h2>
     <code translate="No">audio:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
-    <p><strong>有效值：</strong>包含要使用的音頻GROUP-ID名稱的字符串。此值必須已定義為<a href="#alternate_audio">alter_audio</a>分組。的<a href="#codecs">編解碼器</a>設置應反映備用音頻組的所有編解碼器。</p>
+    <p><strong>有效值：</strong>包含要使用的音頻GROUP-ID名稱的字符串。此值必須已定義為<a href="#alternate_audio">alter_audio</a>分組。這<a href="#codecs">編解碼器</a>設置應反映備用音頻組的所有編解碼器。</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>指定播放列表的備用音軌。</p>
+    <p>指定播放清單的替代音軌。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1104,18 +460,18 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="segment_image_url" translate="No">segment_image_url</h2>
+    <h2 id="segment_image_url" translate="No">區段影像網址</h2>
     <code translate="No">segment_image_url:String (URL)</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>創建僅音頻片段時，請使用指定的圖像文件作為每個片段的縮略圖。</p>
+    <p>創建純音頻片段時，請使用指定的圖像文件作為每個片段的縮略圖。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1129,24 +485,24 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="segment_video_snapshots" translate="No">segment_video_snapshots</h2>
+    <h2 id="segment_video_snapshots" translate="No">區段視訊快照</h2>
     <code translate="No">segment_video_snapshots:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
-    <p><strong>默認：</strong>假</p>
+    <p><strong>默認：</strong>錯誤的</p>
 
     <p><strong>有效值：</strong>對或錯</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>將視頻文件分段為純音頻分段時，請為每個分段拍攝視頻快照作為縮略圖。</p>
+    <p>將視訊檔案分割為僅限音訊的區段時，請將視訊的快照作為每個區段的縮圖。</p>
 
     <p>如果設置了segment_image_file，則此選項無效。</p>
 
@@ -1163,22 +519,22 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#segment_image_url"> segment_image_url</a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="source" translate="No">source</h2>
+    <h2 id="source" translate="No">來源</h2>
     <code translate="No">source:String</code>
 
-    <p><strong>API 版本：</strong>V2</p>
+    <p><strong>API版本：</strong>V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
     <p>引用同一作業的媒體輸出上的標籤，以在播放列表中填寫相應的數據。</p>
 
-    <p>對於<code translate="No">HLS</code>，<a href="#bandwidth">帶寬</a>，<a href="#codecs">編解碼器</a>和<a href="#resolution">解析度</a>默認情況下，從來源推斷出這些值。任何<a href="#bandwidth">帶寬</a>，<a href="#codecs">編解碼器</a>， 要么<a href="#resolution">解析度</a>為同一流指定的值將覆蓋推斷的值。</p>
+    <p>為了<code translate="No">HLS</code>， 這<a href="#bandwidth">帶寬</a>，<a href="#codecs">編解碼器</a>， 和<a href="#resolution">解析度</a>默認情況下，從來源推斷出這些值。任何<a href="#bandwidth">帶寬</a>，<a href="#codecs">編解碼器</a>， 或者<a href="#resolution">解析度</a>為同一流指定的值將覆蓋推斷的值。</p>
 
-    <aside class="bcls-aside bcls-aside--warning"><code translate="No">source</code>是<strong>不</strong>與SMIL輸出兼容。</aside>
+    <aside class="bcls-aside bcls-aside--warning"><code translate="No">source</code>是<strong>不是</strong>與 SMIL 輸出兼容。</aside>
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
   "input": "s3://zencodertesting/test.mov",
@@ -1200,10 +556,10 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="max_hls_protocol_version" translate="No">max_hls_protocol_version</h2>
+    <h2 id="max_hls_protocol_version" translate="No">最大通訊協定版本</h2>
     <code translate="No">max_hls_protocol_version:Integer</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
@@ -1211,17 +567,17 @@ Brightcove
 
     <p><strong>有效值：</strong>2-5</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>4</p>
+    <p><strong>例子：</strong>4</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>設置最大值<code translate="No">HLS</code>使用的協議版本。特殊功能將可用。</p>
+    <p>設置最大值<code translate="No">HLS</code>使用的協議版本。特殊功能將在可用時使用。</p>
 
     <p>此選項應大於或等於<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>提供時。</p>
 
-    <p><strong>注意：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HTTP實時流</a>輸出。</p>
+    <p><strong>筆記：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HTTP實時流</a>輸出。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1262,25 +618,25 @@ Brightcove
     <h2 id="hls_protocol_version" translate="No">hls_protocol_version</h2>
     <code translate="No">hls_protocol_version:Integer</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
-    <p><strong>默認：</strong>自動根據<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>設置</p>
+    <p><strong>默認：</strong>自動根據<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>環境</p>
 
     <p><strong>有效值：</strong>2-5</p>
 
-    <aside class="bcls-aside bcls-aside--information">注意：<code translate="No">HLS</code>不完全支持版本6和7。如果為它們指定<code translate="No">hls_protocol_version</code>唯一的效果是從播放列表中刪除不推薦使用的功能。</aside>
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <aside class="bcls-aside bcls-aside--information">筆記：<code translate="No">HLS</code>不完全支持版本 6 和 7；如果你指定它們<code translate="No">hls_protocol_version</code>唯一的效果是從播放列表中刪除不推薦使用的功能。</aside>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>3</p>
+    <p><strong>例子：</strong>3</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>設置要使用的HLS協議版本。特殊功能將可用。</p>
+    <p>設置要使用的HLS協議版本。特殊功能將在可用時使用。</p>
 
-    <aside class="bcls-aside bcls-aside--information">注意：HLS版本1-3將整數用於<code translate="No">duration</code>在HLS播放列表中。版本4和更高版本使用浮點數。</aside>
-    <p><strong>注意：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HTTP實時流</a>輸出。</p>
+    <aside class="bcls-aside bcls-aside--information">筆記：HLS版本1-3將整數用於<code translate="No">duration</code>在HLS播放列表中。版本 4 及更高版本使用浮點數。</aside>
+    <p><strong>筆記：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HTTP實時流</a>輸出。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1296,26 +652,26 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="hls_optimized_ts" translate="No">hls_optimized_ts</h2>
+    <h2 id="hls_optimized_ts" translate="No">最佳化</h2>
     <code translate="No">hls_optimized_ts:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a> / <a href="#streams">流</a></p>
 
     <p><strong>默認：</strong><code translate="No">true</code></p>
 
-    <p><strong>有效值：</strong><code translate="No">true</code>要么<code translate="No">false</code></p>
+    <p><strong>有效值：</strong><code translate="No">true</code>或者<code translate="No">false</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>為優化TS段文件<code translate="No">HTTP Live Streaming</code>在iOS設備上。</p>
+    <p>優化TS段文件以用於<code translate="No">HTTP Live Streaming</code>在iOS設備上。</p>
 
-    <p><strong>注意：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HTTP Live Streaming</code></a>輸出。</p>
+    <p><strong>筆記：</strong>僅適用於<a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html"><code translate="No">HTTP Live Streaming</code></a>輸出。</p>
 
-    <aside class="bcls-aside bcls-aside--information">注意：<code translate="No">HLS</code>版本1-3將整數用於<code translate="No">duration</code>在<code translate="No">HLS</code>播放列表。版本4和更高版本使用浮點數。</aside>
+    <aside class="bcls-aside bcls-aside--information">筆記：<code translate="No">HLS</code>版本 1-3 使用整數表示<code translate="No">duration</code>在<code translate="No">HLS</code>播放列表。版本 4 及更高版本使用浮點數。</aside>
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
   "input": "s3://zencodertesting/test.mov",
@@ -1328,26 +684,26 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="prepare_for_segmenting" translate="No">prepare_for_segmenting</h2>
+    <h2 id="prepare_for_segmenting" translate="No">準備分段 (__R)</h2>
     <code translate="No">prepare_for_segmenting:String or Array</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>有效值：</strong><code translate="No">hls</code>，<code translate="No">mss</code>，<code translate="No">dash</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong><code translate="No">hls,dash</code></p>
+    <p><strong>例子：</strong><code translate="No">hls,dash</code></p>
 
     <p><strong>描述：</strong></p>
 
-    <p>如果您打算將輸出傳輸到<code translate="No">HLS</code>，MSS和/或<code translate="No">DASH</code>使用字幕將其編碼為MP4後，請將此選項設置為true，以包括字幕和分段的關鍵幀時序。這允許分段版本在進行轉碼的情況下仍包含與HLS兼容的字幕，並提供以一致的時間間隔進行分段。</p>
+    <p>如果您打算將輸出多路傳輸到<code translate="No">HLS</code>，MSS和/或<code translate="No">DASH</code>使用字幕將其編碼為MP4後，將此選項設置為true，以包括字幕和分段的關鍵幀時序。這允許分段版本在進行轉碼的情況下仍包括與HLS兼容的字幕，並以一致的時間間隔進行分段。</p>
 
-    <p>指定分段輸出的類型，稍後將該輸出進行多路復用以創建分段輸出，以便Zencoder可以根據需要準備字幕和關鍵幀。</p>
+    <p>指定分段輸出的類型，稍後將該輸出進行多路復用以創建該分段輸出，以便Zencoder可以根據需要準備字幕和關鍵幀。</p>
 
-    <p><strong>注意：</strong>當前無法將字幕添加到<code translate="No">HLS</code>轉碼時輸出。</p>
+    <p><strong>筆記：</strong>當前無法將字幕添加到<code translate="No">HLS</code>轉碼時輸出。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1365,34 +721,25 @@ Brightcove
     <h2 id="smil-base-url" translate="No">smil-base-url</h2>
     <code translate="No">smil_base_url:String</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong> rtmp：//127.0.0.1/base/path/</p>
+    <p><strong>例子：</strong> rtmp：//127.0.0.1/base/path/</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>這會將標籤&lt;meta base =“ smil_base_url_value” /&gt;添加到SMIL播放列表的&lt;head&gt;部分。</p>
+    <p>這會將標籤&lt;meta base ="smil_base_url_value"/&gt;添加到SMIL播放列表的&lt;head&gt;部分。</p>
 
     <p>本示例將輸出如下所示的播放列表：</p>
 
     <pre>
-  &lt;smil&gt;
-    &lt;頭&gt;
-      &lt;meta base =“ rtmp：//123.456.123.123/path/to/videos/” /&gt;
-    &lt;/ head&gt;
-    &lt;身體&gt;
-      &lt;開關&gt;
-        &lt;video src =“ mp4：test.mp4” system-bitrate =“ 500000” /&gt;
-      &lt;/ switch&gt;
-    &lt;/ body&gt;
-  &lt;/ smil&gt;
+  &lt;smil&gt; &lt;head&gt; &lt;meta base="rtmp://123.456.123.123/path/to/videos/"/&gt; &lt;/head&gt; &lt;body&gt; &lt;switch&gt; &lt;video src="mp4:test.mp4" system-bitrate="500000"/&gt; &lt;/switch&gt; &lt;/body&gt; &lt;/smil&gt;
 </pre>
 
-    <p><strong>注意</strong>：僅在具有播放格式的播放列表類型的輸出上起作用。</p>
+    <p><strong>筆記</strong>：僅在播放列表類型的輸出上起作用，格式為大風。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1419,26 +766,26 @@ Brightcove
 }</code></pre>
   </section>
   <section class="bcls-section">
-    <h2 id="byte_range_segmenting" translate="No">byte_range_segmenting</h2>
+    <h2 id="byte_range_segmenting" translate="No">位元組範圍 _ 分段</h2>
     <code translate="No">byte_range_segmenting:Boolean</code>
 
-    <p><strong>API 版本：</strong>V2</p>
+    <p><strong>API版本：</strong>V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>默認：</strong><code translate="No">false</code></p>
 
-    <p><strong>有效值：</strong><code translate="No">true</code>要么<code translate="No">false</code></p>
+    <p><strong>有效值：</strong><code translate="No">true</code>或者<code translate="No">false</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
     <p>配置<code translate="No">HLS</code>分段以生成單個輸出文件，而不是每個分段一個文件。</p>
 
-    <p>需要<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>要么<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>設置為4或更高。</p>
+    <p>需要<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>或者<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>設置為4或更高。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1455,28 +802,28 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="generate_keyframe_manifest" translate="No">generate_keyframe_manifest</h2>
+    <h2 id="generate_keyframe_manifest" translate="No">產生關鍵影格資訊清單</h2>
     <code translate="No">generate_keyframe_manifest:Boolean</code>
 
-    <p><strong>API 版本：</strong>V2</p>
+    <p><strong>API版本：</strong>V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>默認：</strong><code translate="No">false</code></p>
 
-    <p><strong>有效值：</strong><code translate="No">true</code>要么<code translate="No">false</code></p>
+    <p><strong>有效值：</strong><code translate="No">true</code>或者<code translate="No">false</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong><code translate="No">true</code></p>
+    <p><strong>例子：</strong><code translate="No">true</code></p>
 
     <p><strong>描述：</strong></p>
 
     <p>產生一個<code translate="No">HLS</code>快進和快退播放所需的關鍵幀（I幀）清單。</p>
 
-    <p>默認關鍵幀清單文件名與播放列表文件名相同，但添加了“ -iframe-index”（因此，對於“ master.m3u8”播放列表，關鍵幀清單將為“ master-iframe-index.m3u8”）。關鍵幀清單文件名可以用<a href="#keyframe_manifest_filename"><code translate="No">keyframe_manifest_filename</code></a>。</p>
+    <p>預設的關鍵影格資訊清單檔案名稱與播放清單檔案名稱相同，但' 新增了 '-iframe 索引 (所以對於 '主要 .m3u8 ' 播放清單，關鍵影格資訊清單會是' 主要 iframe-index.m3u8 ')。關鍵幀清單文件名可以用<a href="#keyframe_manifest_filename"><code translate="No">keyframe_manifest_filename</code></a>。</p>
 
-    <p>默認情況下啟用<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>要么<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>設置為4或更大。</p>
+    <p>默認情況下啟用<a href="#max_hls_protocol_version"><code translate="No">max_hls_protocol_version</code></a>或者<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>設置為4或更大。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1494,22 +841,22 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#keyframe_manifest_filename"><code translate="No">keyframe_manifest_filename</code></a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="keyframe_manifest_filename" translate="No">keyframe_manifest_filename</h2>
+    <h2 id="keyframe_manifest_filename" translate="No">關鍵影格清單檔案名稱</h2>
     <code translate="No">keyframe_manifest_filename:String</code>
 
-    <p><strong>API 版本：</strong>V2</p>
+    <p><strong>API版本：</strong>V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>默認：</strong><code translate="No">iframe_index.m3u8</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong><code translate="No">my_iframe_index.m3u8</code></p>
+    <p><strong>例子：</strong><code translate="No">my_iframe_index.m3u8</code></p>
 
     <p><strong>描述：</strong></p>
 
-    <p>除非指定，否則用於關鍵幀清單的文件名與播放列表文件名相同，但附加“ -iframe-index”。例如，對於播放列表“ master.m3u8”，關鍵幀清單將為“ master-iframe-index.m3u8”。</p>
+    <p>除非指定，否則用於關鍵影格資訊清單的檔案名稱與播放清單檔案名稱相同，但' 附加了 '-iframe 索引。例如，對於播放列表“master.m3u8"，關鍵幀清單將為“master-iframe-index.m3u8"。</p>
 
     <p>此選項要求<a href="#generate_keyframe_manifest">generate_keyframe_manifest</a>是真的，或者<a href="#hls_protocol_version"><code translate="No">hls_protocol_version</code></a>是4或更大。</p>
 
@@ -1529,20 +876,20 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="#generate_keyframe_manifest"> generate_keyframe_manifest</a></p>
   </section>
   <section class="bcls-section">
-    <h2 id="allow_skipped_sources" translate="No">allow_skipped_sources</h2>
+    <h2 id="allow_skipped_sources" translate="No">允許 (R) 跳過來源</h2>
     <code translate="No">allow_skipped_sources:Boolean</code>
 
-    <p><strong>API 版本：</strong>V2</p>
+    <p><strong>API版本：</strong>V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs"><code translate="No">outputs</code></a></p>
 
     <p><strong>默認：</strong><code translate="No">false</code></p>
 
-    <p><strong>有效值：</strong><code translate="No">true</code>要么<code translate="No">false</code></p>
+    <p><strong>有效值：</strong><code translate="No">true</code>或者<code translate="No">false</code></p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong><code translate="No">true</code></p>
+    <p><strong>例子：</strong><code translate="No">true</code></p>
 
     <p><strong>描述：</strong></p>
 
@@ -1550,7 +897,7 @@ Brightcove
 
     <p>要正確忽略跳過的源，播放列表的流必須有一個<a href="#streaming_source"><code translate="No">source</code></a>定義。</p>
 
-    <aside class="bcls-aside bcls-aside--warning"><code translate="No">allow_skipped_sources</code>是<strong>不</strong>與SMIL輸出兼容。SMIL將<strong>不</strong>識別跳過的源。</aside>
+    <aside class="bcls-aside bcls-aside--warning"><code translate="No">allow_skipped_sources</code>是<strong>不是</strong>與 SMIL 輸出兼容。SMIL 將<strong>不是</strong>識別跳過的來源。</aside>
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
   "input": "s3://zencodertesting/test.mov",
@@ -1575,131 +922,3 @@ Brightcove
     <p><strong>也可以看看：</strong><a href="/encoding-settings/general/encoding-settings-general-output-settings.html#source"><code translate="No">source</code></a></p>
   </section>
 </article>
-<!-- complete bootstrap layout -->
-    </div>
-    <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">頁面內容</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
-      </nav>
-      
-    </div>
-  </div>
-</div>
-
-<hr>
-<footer class="bcls-footer" role="contentinfo">  <div class="row">
-    <div class="region region-footer-top-center col-md-12">
-      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-
-        <h2>布萊特灣支援</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://status.brightcove.com">系統狀態</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
-          </li>
-          <li>
-            <a href="https://support.brightcove.com/">文獻資料</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-        <h2>訓練</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
-          </li>
-          <li>
-            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
-          </li>
-          <li>
-            <a href="https://university.brightcove.com/">布萊特灣大學</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-        <h2>Brightcove</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://www.brightcove.com">亮麗</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region region-footer-bottom-center col-md-12">
-      <div class="bcls-copyright footer-menu">
-        <table>
-          <tr>
-            <td>
-              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
-            </td>
-            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
-            <td>
-              <div class="gf-links-cols footer-menu">
-                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-      
-  var searchBox = sajari.init({
-    mode: "search-box",
-    project: "1588255093746585379", // Set this to your project.
-    collection: "brightcove-documenation", // Set this to your collection.
-    instantPipeline: "autocomplete", // Pipeline used as you type
-    inputPlaceholder: "Search", // Input element placeholder
-    maxSuggestions: 5, // Maximum number of suggestions to show
-    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-  });
-  
-    searchBox("sub", "pipeline.search-sent", function (_, query) {
-      window.location = "/search.html?q=" + encodeURIComponent(query.q);
-    });
-  
-
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
-  <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
-  <script src="/assets/js/feedback.js"></script>
-  
-  <script src="/assets/js/sajari-search-foot.js"></script>
-  
-  <!-- <script src="/assets/js/sajari-index.js"></script> -->
-  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
-</body>
-
-</html>

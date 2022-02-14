@@ -1,0 +1,159 @@
+---
+title:取證水印設置
+description: '本主題提供有關取證水印設置的信息。'
+parent: Content Protection Settings 
+grandparent: Encoding Settings
+---
+ <h1>{{ page.title }}</h1>
+<article class="bcls-article">
+  <summary>{{ page.description }}</summary>
+  <section class="bcls-section">
+    <h2 id="Introduction">簡介</h2>
+    <p>取證水印將有助於保護您的優質內容免遭盜版和未經授權的內容共享。此功能還有助於快速識別內容洩漏的來源，以便採取措施。看<a href="/encoding-guides/forensic-watermarking.html">法醫水印</a>有關使用取證水印的要求的更多詳細信息。</p>
+  </section>
+  <section class="bcls-section">
+    <h2 id="forensic_watermark">forensic_watermark</h2>
+    <code translate="No">forensic_watermark:String</code>
+
+    <p><strong>API 版本：</strong> V2</p>
+
+    <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
+
+    <p><strong>有效值：</strong>“甲”、“乙”</p>
+
+    <aside class="bcls-aside bcls-aside--information">必須設置為<code translate="No">A</code>對於一個輸出，和<code translate="No">B</code>對於第二個輸出</aside>
+
+    <p><strong>兼容的工作類型：</strong>伏特</p>
+
+    <p><strong>例子：</strong>一個</p>
+
+    <p><strong>描述：</strong></p>
+
+    <p>要在 Zencoder 中生成帶有取證水印的輸出，您需要為每個視頻指定 2 個輸出，一個輸出<strong translate="no">一種</strong>和<strong translate="no">乙</strong>以便來自每個輸出的片段可以在不同的序列中混合以產生一系列不同的帶水印的“視頻”以供播放（例如：AABBABBABA、ABBAABBABA、BABAABBAA 等）。</p>
+
+    <aside class="bcls-aside bcls-aside--information language-editable">筆記： 
+      <ul>
+        <li>法醫水印<strong>不能</strong>添加到短於 5 分鐘的視頻中</li>
+        <li><code translate="No">segment_seconds</code><strong>必須</strong>設置為<code translate="No">2</code>否則不會添加取證水印</li>
+      </ul>
+    </aside>
+
+<pre class="line-numbers">
+<code class="language-json" translate="No">{
+  "input": "s3://zencodertesting/test.mov",
+  "outputs": [
+    {
+      "base_url": "s3://urlTest",
+      "filename": "contextAwareEncoding1_A.m4f",
+      "public": false,
+      "format": "m4f",
+      "label": "m4f-contextAwareEncoding1-A-b30e1",
+      "generate_mp4_atom_map": true,
+      "Mp4_atom_map_filename": "contextAwareEncod-A-atom_map.json",
+      "skip_audio": true,
+      <span class="bc-highlight">"forensic_watermark": "A"</span>,
+      "dynamic_profile_rendition": 1,
+      "skip": {
+          "require_video": true
+      },
+      "fragment_duration": 2000,
+      <span class="bc-highlight">"segment_seconds": 2</span>,
+      "headers": {
+          "x-amz-server-side-encryption": "AES256"
+      }
+    },
+    {         
+      "base_url": "s3://urlTest",
+      "filename": "contextAwareEncoding1_B.m4f",
+      "public": false,
+      "format": "m4f",
+      "label": "m4f-contextAwareEncoding1-B-e348",
+      "generate_mp4_atom_map": true,
+      "mp4_atom_map_filename": "contextAwareEncod-B-atom_map.json",
+      "skip_audio": true,
+      <span class="bc-highlight">"forensic_watermark": "B"</span>,
+      "dynamic_profile_rendition": 1,
+      "skip": {
+          "require_video": true
+      },
+      "fragment_duration": 2000,
+      <span class="bc-highlight">"segment_seconds": 2</span>,
+      "headers": {
+          "x-amz-server-side-encryption": "AES256"
+      }
+    }
+  ]
+}</code></pre>
+  </section>
+  <section class="bcls-section">
+    <h2 id="forensic_watermark_stub_mode">forensic_watermark_stub_mode</h2>
+    <code translate="No">forensic_watermark_stub_mode:Boolean</code>
+
+    <p><strong>API 版本：</strong> V2</p>
+
+    <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
+
+    <p><strong>有效值：</strong>真假</p>
+
+    <p><strong>默認值：</strong>錯誤的</p>
+
+    <p><strong>兼容的工作類型：</strong>伏特</p>
+
+    <p><strong>例子：</strong>真的</p>
+
+    <p><strong>描述：</strong></p>
+
+    <p>到<strong>用於測試集成的目的</strong>在 Zencoder 中生成帶有取證水印的輸出。當設置為<code translate="No">true</code>和...一起<a href="#forensic_watermark"><code translate="No">forensic_watermark</code></a>，此標誌會導致創建可見水印（以驗證是否已成功添加取證水印）。</p>
+
+    <p>測試完成後，您將需要再次運行該作業，省略<code translate="No">forensic_watermark_stub_mode</code>標誌或將其設置為<code translate="No">false</code> , 以獲得沒有可見水印的輸出。</p>
+
+<pre class="line-numbers">
+  <code class="language-json" translate="No">{
+    "input": "s3://zencodertesting/test.mov",
+    "outputs": [
+      {
+        "base_url": "s3://urlTest",
+        "filename": "contextAwareEncoding1_A.m4f",
+        "public": false,
+        "format": "m4f",
+        "label": "m4f-contextAwareEncoding1-A-b30e1",
+        "generate_mp4_atom_map": true,
+        "Mp4_atom_map_filename": "contextAwareEncod-A-atom_map.json",
+        "skip_audio": true,
+        <span class="bc-highlight">"forensic_watermark": "A"</span>,
+        <span class="bc-highlight">"forensic_watermark_stub_mode": true</span>,
+        "dynamic_profile_rendition": 1,
+        "skip": {
+            "require_video": true
+        },
+        "fragment_duration": 2000,
+        "segment_seconds": 2,
+        "headers": {
+            "x-amz-server-side-encryption": "AES256"
+        }
+    },
+    {         
+        "base_url": "s3://urlTest",
+        "filename": "contextAwareEncoding1_B.m4f",
+        "public": false,
+        "format": "m4f",
+        "label": "m4f-contextAwareEncoding1-B-e348",
+        "generate_mp4_atom_map": true,
+        "mp4_atom_map_filename": "contextAwareEncod-B-atom_map.json",
+        "skip_audio": true,
+        <span class="bc-highlight">"forensic_watermark": "B"</span>,
+        <span class="bc-highlight">"forensic_watermark_stub_mode": true</span>,
+        "dynamic_profile_rendition": 1,
+        "skip": {
+            "require_video": true
+        },
+        "fragment_duration": 2000,
+        "segment_seconds": 2,
+        "headers": {
+            "x-amz-server-side-encryption": "AES256"
+        }
+    }
+  ]
+}</code></pre>
+        </section>
+</article>

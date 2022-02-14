@@ -1,0 +1,206 @@
+{
+  "input": "s3://zencodertesting/MTBmovie.mp4",
+  "generate_dynamic_profile": true,
+  "dynamic_profile_options": {
+    "max_renditions": 6,
+    "fixed_keyframe_interval": true,
+    "keyframe_rate": 0.5,
+    "min_resolution": {
+      "height": 240
+    }
+  },
+  "outputs": [
+    {
+      "public": true,
+      "dynamic_profile_rendition": 1,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition1.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 2,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition2.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 3,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition3.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 4,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition4.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 5,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition5.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 6,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Real/",
+      "filename": "fwm_A_real_rendition6.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 1,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition1.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 2,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition2.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 3,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition3.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 4,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition4.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 5,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition5.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 6,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/A_Stub/",
+      "filename": "fwm_A_stub_rendition6.mp4",
+      "forensic_watermark": "A",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 1,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition1.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 2,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition2.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 3,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition3.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 4,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition4.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 5,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition5.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 6,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Real/",
+      "filename": "fwm_B_real_rendition6.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": false
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 1,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition1.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 2,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition2.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 3,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition3.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 4,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition4.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 5,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition5.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    },
+    {
+      "public": true,
+      "dynamic_profile_rendition": 6,
+      "base_url": "s3://zencodertesting/forensic_watermark/Test2/B_Stub/",
+      "filename": "fwm_B_stub_rendition6.mp4",
+      "forensic_watermark": "B",
+      "forensic_watermark_stub_mode": true
+    }
+  ]
+}

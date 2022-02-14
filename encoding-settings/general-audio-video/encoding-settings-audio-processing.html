@@ -1,674 +1,30 @@
-﻿<!doctype html>
-<html lang="zh-TW">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="本主題包含有關與音頻處理有關的編碼設置的詳細信息。有關其他音頻特定的設置，請參閱音頻和速率控制。">
-
-  <title>音訊處理設定</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&amp;display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/prism.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/landing-page.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/tabs.css">
-  <link rel="stylesheet" href="https://support.brightcove.com/site-assets/css/site/styles.css">
-  <link rel="stylesheet" href="/assets/css/local.css">
-  <link data-react-helmet="true" rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/381443caa8.js" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/google-analytics.js"></script>
-  <script src="/assets/js/sajari-head.js"></script>
-</head>
-
-<body class="body">
-
-<header>
-  <div class="div-header">
-    <a href="/"><img class="product-logo" src="https://support.brightcove.com/site-assets/images/site/product-logos/Zencoder_Logo.svg" alt="產品標誌" style="max-height: 100px;max-width: 232px;"/></a>
-<!-- GTranslate: https://gtranslate.io/ -->
-<select onchange="doGTranslate(this);"><option value="">選擇語言</option><option value="en|en" translate="No">English</option><option value="en|zh-TW" translate="No">繁體中文</option><option value="en|fr" translate="No">Français</option><option value="en|de" translate="No">Deutsche</option><option value="en|ja" translate="No">日本語</option><option value="en|ko" translate="No">한국어</option><option value="en|es" translate="No">Español</option></select>
-
-<script>
-/* <![CDATA[ */
-function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.hostname.split('.')[0];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='en';location.href=location.protocol+'//'+(lang == 'en' ? '' : lang+'.')+location.hostname.replace('www.', '').replace(RegExp('^' + plang + '\\.'), '')+location.pathname+location.search;}
-/* ]]> */
-</script>
-
-Brightcove 
-
-    <span class="secondary-nav"><a href="https://supportportal.brightcove.com/s/login/?"><img src="https://support.brightcove.com/site-assets/images/site/support.png" alt="支持"/>聯繫支持</a><span style="vertical-align: top;margin-left:1em;margin-right:1em;">|</span><a href="https://status.brightcove.com/"><img src="https://support.brightcove.com/site-assets/images/site/status.png" alt="系統狀態"/>系統狀況</a></span><br/>
-    
-  </div>
-  <nav aria-label="breadcrumb">
-    <ol class="breadcrumb arr-right">
-      
-      <li class="breadcrumb-item"><a href="/">首頁</a></li>
-      
-      
-      
-      <li class="breadcrumb-item"><a href="/encoding-settings/general-audio-video/">音訊/視訊設定</a></li>
-      
-      <li class="breadcrumb-item active" aria-current="page">音訊處理設定</li>
-    </ol>
-  </nav>
-</header>
-<div class="container">
-    <div class="row">
-      <div class="col-sm-3 left-side-bar">
-        				<select id="site_select" class="bcls-select" style="margin-right: 1rem;">
-					<option value="">其他布萊特灣文件</option>
-					
-						
-							<option value="https://support.brightcove.com">文件首頁</option>
-						
-					
-						
-							<option value="https://audience.support.brightcove.com">布萊特灣觀眾</option>
-						
-					
-						
-							<option value="https://beacon.support.brightcove.com">布萊特灣燈塔</option>
-						
-					
-						
-							<option value="https://campaign.support.brightcove.com">布萊特灣戰役</option>
-						
-					
-						
-							<option value="https://engage.support.brightcove.com">布萊特灣參與</option>
-						
-					
-						
-							<option value="https://live.support.brightcove.com">Brightcove Live</option>
-						
-					
-						
-							<option value="https://gallery.support.brightcove.com">Brightcove 圖庫</option>
-						
-					
-						
-							<option value="https://ssai.support.brightcove.com">布萊特灣</option>
-						
-					
-						
-							<option value="https://social.support.brightcove.com">布萊特灣社會</option>
-						
-					
-						
-							<option value="https://studio.support.brightcove.com">視訊雲端工作室</option>
-						
-					
-						
-							<option value="https://player.support.brightcove.com">布萊特灣球員開發</option>
-						
-					
-						
-							<option value="https://apis.support.brightcove.com">視訊雲端平台 API</option>
-						
-					
-						
-							<option value="https://sdks.support.brightcove.com">視訊雲端裝置開發套件</option>
-						
-					
-						
-							<option value="https://integrations.support.brightcove.com">整合與 CMS 連接器</option>
-						
-					
-						
-							<option value="https://general.support.brightcove.com">視訊雲端一般資訊</option>
-						
-					
-						
-							<option value="https://zencoder.support.brightcove.com">Zencoder</option>
-						
-					
-				</select>
-						<nav class="sidenav" id="side_nav">
-
-          
-            
-            <h5><a href="/index.html">首頁</a></h5>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/getting-started/index.html">開始使<strong>用 + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/getting-started/overview-zencoder.html">概述</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/quick-start-zencoder.html">快速入門</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/getting-api-key.html">取得 API 金鑰</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/output-settings.html">輸出設定</a></li>
-                  
-                
-                  
-                    <li><a href="/getting-started/creating-multiple-outputs.html">建立多個輸出</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/general-information/index.html">一般資訊<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/general-information/faq-basics.html">基本概念</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-codecs-and-formats.html">轉碼器和格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-encoding.html">編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-file-transfers.html">檔案傳輸</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-zencoder-pricing.html">齊編碼器定價</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/faq-rate-limiting.html">速率限制</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/supported-video-and-audio-formats-codecs-and-containers.html">支援的視訊和音訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/overview-context-aware-encoding.html">概述：上下文感知編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/getting-notifications-when-videos-are-finished.html">視訊完成時收到通知</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/how-zencoder-saves-your-files-when-uploads-fail.html">Zencoder 如何在上傳失敗時儲存檔案</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-s3.html">使用 ZenCoder 與 S3 搭配使用</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-azure.html">在 Azure 中使用贊編碼器</a></li>
-                  
-                
-                  
-                    <li><a href="/general-information/using-zencoder-google-cloud-platform.html">使用 Zencoder 與谷歌雲存儲</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/references/index.html">參考資料<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/references/reference.html">API 參考</a></li>
-                  
-                
-                  
-                    <li><a href="/references/known-issues.html">已知問題</a></li>
-                  
-                
-                  
-                    <li><a href="/references/release-notes.html">產品更新</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-settings/index.html">編碼設定<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general/index.html">一般設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-job.html">工作設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-general-output-settings.html">一般輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/cae-settings.html">CAE 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-conditional-outputs.html">條件輸出設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general/encoding-settings-notifications.html">通知設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/general-audio-video/index.html">音訊/視訊設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio.html">音訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-audio-processing.html">音訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video.html">視訊設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-video-processing.html">視訊處理設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-broadcast.html">廣播設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-frame-rate.html">影格速率設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">匯率控制設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-resolution.html">解析度設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html">分段串流設定</a></li>
-                        
-                        <li><a href="/encoding-settings/general-audio-video/encoding-settings-transmuxing.html">轉換設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/formats-codecs/index.html">格式和轉碼器設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-format-and-codecs.html">格式與轉碼器設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-aac.html">AAC 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-flv.html">FLV 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-hdr10.html">HDR 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-h264.html">H.264 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-mp4.html">MP4 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/formats-codecs/encoding-settings-vp6.html">VP6 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/assets/index.html">媒體資產設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-captions.html">註解設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-clips.html">剪輯片段設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-thumbnails.html">縮圖設定</a></li>
-                        
-                        <li><a href="/encoding-settings/assets/encoding-settings-watermarks.html">浮水印設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/content-protection/index.html">內容防護設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-encryption.html">加密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-decryption.html">解密設定</a></li>
-                        
-                        <li><a href="/encoding-settings/content-protection/encoding-settings-drm.html">DRM 設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/encoding-settings/sources-destinations/index.html">來源/目的地設定<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-s3-settings.html">S3 設定</a></li>
-                        
-                        <li><a href="/encoding-settings/sources-destinations/encoding-settings-aspera.html">阿斯佩拉設定</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/encoding-guides/index.html">編碼指南<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/encoding-guides/advanced-audio-mapping-guide.html">音訊對應指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/as11-mxf.html">作為 11 毫米 x F 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/avc-intra-guide.html">AVC 內部指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/cae-guide.html">CAE 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/creating-mp4-and-hls-outputs-together.html">翻譯指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/dash-streaming-and-playlists.html">DASH 串流和播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/h264-advanced-guide.html">H.264 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hdr10-video-output.html">支援的 HDR 視訊格式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/hevch265-guide.html">HEVC/H.265 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/highwinds-smil.html">高風 SMIL 指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/html5-encoding.html">HTML5 編碼</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-segmented-streaming-and-playlists.html">HLS 串流與播放清單</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/http-live-streaming-using-fragmented-mp4.html">使用分散式 MP4 的 HLS </a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/iosmobile-encoding.html">Io/行動裝置編碼指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/microsoft-smooth-streaming.html">微軟流暢的串流</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/using-quality-based-encoding-modes-streaming-video.html">以品質為基礎的串流編碼模式</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp6-advanced-guide.html">VP6 進階指南</a></li>
-                  
-                
-                  
-                    <li><a href="/encoding-guides/vp9-guide.html">VP9 指南</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/error-troubleshooting/index.html">錯誤/疑難排解<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/error-troubleshooting/problems.html">常見問題</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/region-outages.html">區域中斷</a></li>
-                  
-                
-                  
-                    <li><a href="/error-troubleshooting/when-should-i-retry-failed-jobs.html">重試失敗工作的時機</a></li>
-                  
-                
-                  
-                    <li class="submenu-header">
-                      <a href="/error-troubleshooting/error-codes/index.html">錯誤代碼<strong> + </strong></a>
-                      <ul class="sidenav-subsubmenu" style="display:none;">
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-akamainetstoragefilesizeerror.html">AkA 大型儲存空間檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-checksummismatcherror.html">總和檢查符合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-dimensiontoosmallerror.html">尺寸標註小錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadaccessdeniederror.html">下載存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadfailureerror.html">下載失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-downloadtimeouterror.html">下載時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-filenotfounderror.html">檔案外部建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">檔案永久移動程式錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inaccuratedurationerror.html">不準確的持續時間錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-incompatiblewithdynamicprofileserror.html">與動態設定檔不相容錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-inputfilenotfound.html">找到輸入檔案</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaccesskeyiderror.html">無效存取金鑰存取器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidaudiosettingserror.html">無效的音訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidcodeccombinationerror.html">無效的解碼器組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invaliddownloadedfiletypeerror.html">下載無效的檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidencryptionsettingserror.html">無效密碼設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidfilepatherror.html">無效的檔案路徑</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidformatcodecerror.html">無效格式化程式碼驗證</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidframerateerror.html">無效的影格速率錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidusernameorpassworderror.html">使用者名稱無效密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideobitrateerror.html">無效的視訊標準錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-invalidvideosettingserror.html">無效的視訊設定伺服器錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-nomediaerror.html">無媒體錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-quicktimereferenceerror.html">快速時間參考錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-remoteserverproblemerror.html">遠端伺服器問題錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpauthfailederror.html">驗證失敗錯誤錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpmaxstreamsxidreached.html">RTMP 最大流量已設定</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-rtmpstreamnamealreadyinuse.html">RTMP串流名稱已準備好使用</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-s3bucketnotfounderror.html">S3 代理程式創建者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-segmentingerror.html">分段錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-skippedsourceerror.html">跳過來源錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-thumbnailerror.html">縮圖錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transcodingerror.html">轉碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteegroupurlerror.html">移轉። 無效群組清單錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-transferinvalidgranteeiderror.html">轉移። 無效的莊家</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-truncatedfileerror.html">截斷檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unabletocreatedynamicprofileserror.html">無法建立動態設定檔錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteddownloadproblemerror.html">下載問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedffmpegresult.html">所有人都可以看到</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedmplayerresult.html">圖層結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedprogenresult.html">建議的後代結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedresulterror.html">受到的結果錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpecteduploadproblemerror.html">關於載入問題的問題</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unexpectedx264result.html">所有結果</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unreadablefileerror.html">無法讀取檔案錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedcodecerror.html">不支援的編碼器</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencodingerror.html">不支援的編碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedencryptionerror.html">不支援密碼錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-unsupportedtranscodecombinationerror.html">不支援的轉換碼組合錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadaccessdeniederror.html">上傳存取權限</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadfailureerror.html">上傳失敗錯誤</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadservernotfounderror.html">上傳伺服器無法建立者</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-uploadtimeouterror.html">上傳時間</a></li>
-                        
-                        <li><a href="/error-troubleshooting/error-codes/error-workertimeouterror.html">工作者時間錯誤</a></li>
-                        
-                      </ul>
-                    </li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/integration/index.html">整合<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    <li><a href="/integration/faq-integration-libraries.html">整合程式庫</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/100-integration-reliability.html">100% 整合可靠性</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/test-jobs-and-integration-mode.html">測試工作和整合模式</a></li>
-                  
-                
-                  
-                    <li><a href="/integration/using-read-only-api-keys.html">使用唯讀 API 金鑰</a></li>
-                  
-                
-              </ul>
-            
-          
-            
-              <h5 class="submenu-header"><a href="/support/index.html">支援<strong> + </strong></a></h5>
-              <ul class="sidenav-submenu" style="display:none;">
-                
-                  
-                    
-                  
-                
-                  
-                    <li><a href="/support/viewing-brightcove-system-status-page.html">檢視布萊特灣系統狀態頁面</a></li>
-                  
-                
-                  
-                    <li><a href="/support/contact-sales.html">聯絡銷售人員</a></li>
-                  
-                
-                  
-                    <li><a href="/support/opening-case-with-brightcove-support.html">開啟支援案例</a></li>
-                  
-                
-              </ul>
-            
-          
-      </nav>
-    </div>
-    <div class="col-lg-7" style="background-color: white;color: #333333;margin-top: -1em;margin-bottom: -1em;padding-bottom:1em;">
-  <!-- bootstrap layout -->
-
-<p id="bc_veggie_burger_wrapper" style="display: none;"><img id="bc_veggie_burger" src="/assets/images/feather/menu.svg" alt="導覽功能表"/></p>
-
-<!-- search bar -->
-<div id="nav-search-box" style="margin-top: 1rem;"></div>
-<!-- in-page navigation for narrow screens -->
-<details class="centered-inpage-nav" id="centered_inpage_nav">
-  <summary><h6 class="toc">頁面內容</h6></summary>
-  <nav id="centered_toc"></nav>
-  <ul id="centered_in_page_toc" class="list-none"></ul>
-</details>
-<!-- open in new tab/window -->
-<a id="open_new_tab" href="#" target="_blank" style="display: none;"><img src="/assets/images/feather/external-link.svg" alt="在新分頁中開啟" style="margin-top:4em;width: 1.5em;"/></a>
-
-
-
-  
-    
-
-
-<h1>音訊處理設定</h1>
+---
+title:音頻處理設置
+description: '本主題包含與音頻處理相關的編碼設置的詳細信息。如需其他特定音訊設定，請參閱<a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#audio">音訊</a>與<a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">速率控制</a>。'
+parent: Audio/Video Settings 
+grandparent: Encoding Settings
+---
+ <h1>{{ page.title }}</h1>     
 <article class="bcls-article">
-  <summary>本主題包含有關與音頻處理有關的編碼設置的詳細信息。有關其他音頻特定設置，請參見<a href="/encoding-settings/general-audio-video/encoding-settings-segmented-streaming.html#audio">音訊</a>和<a href="/encoding-settings/general-audio-video/encoding-settings-rate-control.html">速率控制</a>。</summary>
+  <summary>{{ page.description }}</summary>
 
   <section class="bcls-section">
     <h2 id="audio_gain">音訊增益</h2>
     <code translate="No">audio_gain:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>-60至60之間的數字</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>5</p>
+    <p><strong>例子：</strong>5</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>對音頻應用增益量。在應用其他效果後，這會將音頻的音量增加或減少指定的數量。這主要適用於在應用其他效果後調整級別，或對您已經知道其級別的文件進行調整。稍微超過最大音量的聲音將受到輕微限制，以保持保真度，但超過最大音量的聲音顯著增加會導致聲音失真。看到<a href="#audio_normalize">audio_normalize</a>自動增加音量而不會失真。以dB為單位，正或負，最高60dB。</p>
+    <p>對音頻應用增益量。在應用其他效果後，這會將音頻的音量增加或減少指定的數量。這主要適用於在應用其他效果後調整級別，或對您已經知道其級別的文件進行調整。稍微超過最大音量的聲音會受到輕微限制，以保持保真度，但是超過最大音量的聲音會明顯失真。看<a href="#audio_normalize">audio_normalize</a>自動增加音量而不會失真。以dB為單位指定，正數或負數，最高60dB。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -686,21 +42,21 @@ Brightcove
     <h2 id="audio_normalize">音訊標準化 (_R)</h2>
     <code translate="No">audio_normalize:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
-    <p><strong>默認：</strong>假</p>
+    <p><strong>默認：</strong>錯誤的</p>
 
     <p><strong>有效值：</strong>對或錯</p>
 
     <p><strong>兼容的工作類型：</strong>伏特</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>將音頻標準化為0dB。這會盡可能增加音頻的音量，而不會引起失真。為幫助確保通過擴展和壓縮效果進行一致的調整，我們對這些效果之前和之後的音量進行了標準化。看到<a href="#audio_pre_normalize">audio_pre_normalize</a>和<a href="#audio_post_normalize">audio_post_normalize</a>只在其中之一標準化。 audio_normalize等效於同時指定audio_pre_normalize和audio_post_normalize。</p>
+    <p>將音訊正常化為 0dB。這會在不引起失真的情況下盡可能增加音頻的音量。為幫助確保通過擴展和壓縮效果進行一致的調整，我們對這些效果之前和之後的音量進行了標準化。看<a href="#audio_pre_normalize">audio_pre_normalize</a>和<a href="#audio_post_normalize">audio_post_normalize</a>僅在這些點之一進行歸一化。 audio_normalize等效於同時指定audio_pre_normalize和audio_post_normalize。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -712,27 +68,27 @@ Brightcove
   ]
 }</code></pre>
 
-    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_pre_normalize"> audio_pre_normalize</a>和<a href="#audio_post_normalize">audio_post_normalize</a></p>
+    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_pre_normalize"> audio_pre_normalize</a>， 和<a href="#audio_post_normalize">audio_post_normalize</a></p>
   </section>
   <section class="bcls-section">
     <h2 id="audio_pre_normalize">音訊 _ 預設 _ 正常化</h2>
     <code translate="No">audio_pre_normalize:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
-    <p><strong>默認：</strong>假</p>
+    <p><strong>默認：</strong>錯誤的</p>
 
     <p><strong>有效值：</strong>對或錯</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>在應用擴展或壓縮效果之前，請對音頻進行標準化。看到<a href="#audio_normalize">audio_normalize</a>欲獲得更多信息。</p>
+    <p>在套用擴展或壓縮效果之前，將音訊標準化。看<a href="#audio_normalize">audio_normalize</a>想要查詢更多的信息。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -744,27 +100,27 @@ Brightcove
   ]
 }</code></pre>
 
-    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_normalize"> audio_normalize</a>和<a href="#audio_post_normalize">audio_post_normalize</a></p>
+    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_normalize"> audio_normalize</a>， 和<a href="#audio_post_normalize">audio_post_normalize</a></p>
   </section>
   <section class="bcls-section">
     <h2 id="audio_post_normalize">音訊正常化</h2>
     <code translate="No">audio_post_normalize:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
-    <p><strong>默認：</strong>假</p>
+    <p><strong>默認：</strong>錯誤的</p>
 
     <p><strong>有效值：</strong>對或錯</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>應用擴展或壓縮效果後，對音頻進行標準化。看到<a href="#audio_normalize">audio_normalize</a>欲獲得更多信息。</p>
+    <p>套用擴展或壓縮效果後，將音訊標準化。看<a href="#audio_normalize">audio_normalize</a>想要查詢更多的信息。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -776,21 +132,21 @@ Brightcove
   ]
 }</code></pre>
 
-    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_normalize"> audio_normalize</a>和<a href="#audio_pre_normalize">audio_pre_normalize</a></p>
+    <p><strong>也可以看看：</strong><a href="#audio_gain"> audio_gain</a>，<a href="#audio_normalize"> audio_normalize</a>， 和<a href="#audio_pre_normalize">audio_pre_normalize</a></p>
   </section>
   <section class="bcls-section">
     <h2 id="audio_bass">音訊低音</h2>
     <code translate="No">audio_bass:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>分貝數，從-10到10</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>2</p>
+    <p><strong>例子：</strong>2</p>
 
     <p><strong>描述：</strong></p>
 
@@ -812,15 +168,15 @@ Brightcove
     <h2 id="audio_treble">音訊高音 (_L)</h2>
     <code translate="No">audio_treble:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>分貝數，從-10到10</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>2</p>
+    <p><strong>例子：</strong>2</p>
 
     <p><strong>描述：</strong></p>
 
@@ -842,19 +198,19 @@ Brightcove
     <h2 id="audio_highpass">音訊高通</h2>
     <code translate="No">audio_highpass:Integer</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>以Hz為單位的頻率，從5到24000</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+10</p>
+    <p><strong>例子：</strong>10</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>在以Hz為單位的指定頻率上對音頻應用高通濾波器。這樣可以防止低於指定閾值的音頻被包含在輸出中。此設置的一個非常普遍的用途是減少音頻的隆隆聲/噪音，例如在錄製過程中卡車在外面行駛的聲音或一些由風或敲打麥克風引起的聲音。也可以通過指定一個低頻（例如10 Hz）的高通濾波器來減少/消除DC-Shift。</p>
+    <p>對指定頻率（以Hz為單位）的音頻應用高通濾波器。這樣可以防止低於指定閾值的音頻被包含在輸出中。此設置的一個非常普遍的用途是減少音頻的隆隆聲/噪音，例如在錄製過程中卡車在外面行駛的聲音或一些由風或敲打麥克風引起的聲音。也可以通過指定一個低頻（例如10 Hz）的高通濾波器來減少/消除DC-Shift。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -872,19 +228,19 @@ Brightcove
     <h2 id="audio_lowpass">音訊通道 (_L)</h2>
     <code translate="No">audio_lowpass:Integer</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>以Hz為單位的頻率，從5到24000</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+3000</p>
+    <p><strong>例子：</strong>3000</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>在以Hz為單位的指定頻率上對音頻應用低通濾波器。這樣可以防止輸出中包含高於指定閾值的音頻。這可用於從音頻中剪切出高音調的嘯叫聲，或創建特殊效果，例如“電話”設置（使用<a href="#audio_highpass">audio_highpass</a> 300和audio_lowpass 3000）。</p>
+    <p>在以Hz為單位的指定頻率上對音頻應用低通濾波器。這樣可以防止在輸出中包含高於指定閾值的音頻頻率。這可用於從音頻中剪切出高音調的嘯叫聲，或創建特殊效果，例如“電話"設置（使用<a href="#audio_highpass">audio_highpass</a> 300和audio_lowpass 3000）。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -902,15 +258,15 @@ Brightcove
     <h2 id="audio_compression_ratio">音訊壓縮比</h2>
     <code translate="No">audio_compression_ratio:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>1.0至30.0</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+2.5</p>
+    <p><strong>例子：</strong>2.5</p>
 
     <p><strong>描述：</strong></p>
 
@@ -932,7 +288,7 @@ Brightcove
     <h2 id="audio_compression_threshold">音訊壓縮閾值</h2>
     <code translate="No">audio_compression_threshold:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
@@ -940,13 +296,13 @@ Brightcove
 
     <p><strong>有效值：</strong>0到-120之間的負數</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong> -30</p>
+    <p><strong>例子：</strong> -30</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>設置閾值，高於該閾值時將應用音頻壓縮<a href="#audio_compression_ratio">audio_compression_ratio</a>已指定。值以dB為單位指定為負數，低至-120。</p>
+    <p>設置閾值，高於該閾值時，將應用音頻壓縮<a href="#audio_compression_ratio">audio_compression_ratio</a>已指定。值以dB為單位指定為負數，低至-120。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -965,19 +321,19 @@ Brightcove
     <h2 id="audio_expansion_ratio">音訊擴展比</h2>
     <code translate="No">audio_expansion_ratio:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>1.0至30.0</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+2.5</p>
+    <p><strong>例子：</strong>2.5</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>通過以低於指定N：1的指定比例減小音量來擴展音頻的動態範圍<a href="#audio_expansion_threshold">audio_expansion_threshold</a>。1.0和30.0之間的比率有效。擴展對於減少安靜點期間不想要的聲音或使響亮聲音和安靜聲音之間的差異更加明顯非常有用。</p>
+    <p>通過以低於指定N：1的指定比例減小音量來擴展音頻的動態範圍<a href="#audio_expansion_threshold">audio_expansion_threshold</a>。1.0和30.0之間的比率有效。擴展對於減少安靜點期間不想要的聲音或使響亮聲音與安靜聲音之間的差異更加明顯非常有用。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -995,7 +351,7 @@ Brightcove
     <h2 id="audio_expansion_threshold">音訊擴展閾值</h2>
     <code translate="No">audio_expansion_threshold:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
@@ -1003,9 +359,9 @@ Brightcove
 
     <p><strong>有效值：</strong>0到-120之間的負數</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong> -10</p>
+    <p><strong>例子：</strong> -10</p>
 
     <p><strong>描述：</strong></p>
 
@@ -1028,15 +384,15 @@ Brightcove
     <h2 id="audio_fade">音訊淡出 (_F)</h2>
     <code translate="No">audio_fade:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>正數，最高30.0</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+10</p>
+    <p><strong>例子：</strong>10</p>
 
     <p><strong>描述：</strong></p>
 
@@ -1058,15 +414,15 @@ Brightcove
     <h2 id="audio_fade_in">音訊 _</h2>
     <code translate="No">audio_fade_in:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
     <p><strong>有效值：</strong>正數，最高30.0</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>+10</p>
+    <p><strong>例子：</strong>10</p>
 
     <p><strong>描述：</strong></p>
 
@@ -1088,7 +444,7 @@ Brightcove
     <h2 id="audio_fade_out">audio_fade_out</h2>
     <code translate="No">audio_fade_out:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
@@ -1096,11 +452,11 @@ Brightcove
 
     <p><strong>兼容的工作類型：</strong>伏特</p>
 
-    <p><strong>例：</strong>+10</p>
+    <p><strong>例子：</strong>10</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>以指定的持續時間（以秒為單位）對音頻應用淡出效果。</p>
+    <p>以指定的持續時間（以秒為單位）對音頻應用淡入淡出效果。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1118,7 +474,7 @@ Brightcove
     <h2 id="audio_loudness_level">音訊音量 _ 音量</h2>
     <code translate="No">audio_loudness_level:Float</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
@@ -1126,11 +482,11 @@ Brightcove
 
     <p><strong>兼容的工作類型：</strong>伏特</p>
 
-    <p><strong>例：</strong> -23</p>
+    <p><strong>例子：</strong> -23</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>調整音訊的音量等級。它以LUFS度量，以dB為單位。這對於將輸出響度級別設置為符合標準（對於EBU R.128為23dB）很有用。</p>
+    <p>調整音訊的音量等級。它以LUFS度量，並以dB為單位指定。這對於將輸出響度級別設置為符合標準（對於EBU R.128為23dB）很有用。</p>
 
     <pre class="line-numbers">
 <code class="language-json" translate="No">{
@@ -1147,21 +503,21 @@ Brightcove
     <h2 id="audio_karaoke_mode">音訊模式</h2>
     <code translate="No">audio_karaoke_mode:Boolean</code>
 
-    <p><strong>API 版本：</strong>V1，V2</p>
+    <p><strong>API版本：</strong>V1，V2</p>
 
     <p><strong>上級：</strong><a href="/encoding-settings/general/encoding-settings-job.html#outputs">輸出</a></p>
 
-    <p><strong>默認：</strong>假</p>
+    <p><strong>默認：</strong>錯誤的</p>
 
     <p><strong>有效值：</strong>對或錯</p>
 
-    <p><strong>兼容的工作類型：</strong>所有</p>
+    <p><strong>兼容的工作類型：</strong>全部</p>
 
-    <p><strong>例：</strong>真正</p>
+    <p><strong>例子：</strong>真的</p>
 
     <p><strong>描述：</strong></p>
 
-    <p>通過從左側減去右側音頻通道並僅保留差異來對音頻應用“卡拉OK”效果。僅適用於立體聲輸出。</p>
+    <p>通過從左側減去右側音頻通道並僅保留差異來對音頻應用“卡拉OK"效果。僅適用於立體聲輸出。</p>
 
     <p>請謹慎使用此功能：</p>
 
@@ -1181,131 +537,3 @@ Brightcove
 }</code></pre>
   </section>
 </article>
-<!-- complete bootstrap layout -->
-    </div>
-    <div class="col-sm-2 right-side-bar">
-      
-      <nav class="right-side-nav" id="right_side_nav">
-        <h6 class="toc">頁面內容</h6>
-        <ul id="in_page_nav" class="list-none"></ul>
-      </nav>
-      
-    </div>
-  </div>
-</div>
-
-<hr>
-<footer class="bcls-footer" role="contentinfo">  <div class="row">
-    <div class="region region-footer-top-center col-md-12">
-      <nav role="navigation" aria-labelledby="block-brightcovesupport-menu" id="block-brightcovesupport" class="footer-menu">
-
-        <h2>布萊特灣支援</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://status.brightcove.com">系統狀態</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡支援</a>
-          </li>
-          <li>
-            <a href="https://support.brightcove.com/">文獻資料</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-training-menu" id="block-training" class="footer-menu">
-
-        <h2>訓練</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://studio.support.brightcove.com/training/online-training-courses.html">線上課程</a>
-          </li>
-          <li>
-            <a href="https://studio.support.brightcove.com/training/register-training.html">註冊課程</a>
-          </li>
-          <li>
-            <a href="https://university.brightcove.com/">布萊特灣大學</a>
-          </li>
-        </ul>
-
-      </nav>
-      <nav role="navigation" aria-labelledby="block-brightcove-menu" class="footer-menu">
-
-        <h2>Brightcove</h2>
-
-        <ul class="menu">
-          <li>
-            <a href="https://www.brightcove.com">亮麗</a>
-          </li>
-          <li>
-            <a href="https://supportportal.brightcove.com/s/login/?">聯絡我們</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-  <div class="row">
-    <div class="region region-footer-bottom-center col-md-12">
-      <div class="bcls-copyright footer-menu">
-        <table>
-          <tr>
-            <td>
-              <div id="bc_copyright" class="field field--name-field-copyright-year field--type-string field--label-hidden field--item" style="float: left;"> 布萊特灣公司版權所有</div>
-            </td>
-            <td><a href="https://www.brightcove.com/en/legal/privacy">私隱</a> | 條<a href="https://www.brightcove.com/en/terms-and-conditions">款及細則</a></td>
-            <td>
-              <div class="gf-links-cols footer-menu">
-                <div class="gf-social"><a href="https://www.linkedin.com/company/16439" title="LinkedIn" newtab="newtab" class="gf-social-linkedin"><i class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a><a href="https://twitter.com/brightcove" title="Twitter" newtab="newtab" class="gf-social-twitter"><i class="fab fa-twitter" style="font-size: 1.5rem;"></i></a><a href="https://www.facebook.com/Brightcove" title="Facebook" newtab="newtab" class="gf-social-facebook"><i class="fab fa-facebook-f" style="font-size: 1.5rem;"></i></a>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<script>
-      
-  var searchBox = sajari.init({
-    mode: "search-box",
-    project: "1588255093746585379", // Set this to your project.
-    collection: "brightcove-documenation", // Set this to your collection.
-    instantPipeline: "autocomplete", // Pipeline used as you type
-    inputPlaceholder: "Search", // Input element placeholder
-    maxSuggestions: 5, // Maximum number of suggestions to show
-    attachSearchBox: document.getElementById("nav-search-box") // DOM element to attach to
-  });
-  
-    searchBox("sub", "pipeline.search-sent", function (_, query) {
-      window.location = "/search.html?q=" + encodeURIComponent(query.q);
-    });
-  
-
-</script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/https-fix.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/setDate.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/prism.js"></script>
-  
-  <script src="https://support.brightcove.com/site-assets/js/site/site.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/tabs.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/toc.js"></script>
-  <script src="/assets/js/sites_nav.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/bcls-utils.js"></script>
-  <script src="https://support.brightcove.com/site-assets/js/site/local-link-fix.js"></script>
-  <script src="/assets/js/feedback.js"></script>
-  
-  <script src="/assets/js/sajari-search-foot.js"></script>
-  
-  <!-- <script src="/assets/js/sajari-index.js"></script> -->
-  <!-- <script src="https://sdk.amazonaws.com/js/aws-sdk-2.677.0.min.js"></script> -->
-</body>
-
-</html>

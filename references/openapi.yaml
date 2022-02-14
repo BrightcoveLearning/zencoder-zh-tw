@@ -959,6 +959,16 @@ components:
           minimum: -40
           maximum: 40
           default: 0
+        select_baseline_profile_configuration:
+          type: boolean
+          description: |-
+            At least one rendition used in the profile will be baseline profile. Note that `select_baseline_profile_configuration`is `true` by default, and it requires *at least one rendition* to have a resolution at or below 512x288.
+          default: true
+        select_distinct_configurations:
+          type: boolean
+          description: |-
+            If true, CAE will ensure that no two renditions use the same combination of: resolution, frame rate, and codec profile.
+          default: false
         video_configurations:
           type: array
           description: |-
@@ -1014,6 +1024,19 @@ components:
         filename:
           type: string
           description: The filename of a finished file
+        forensic_watermark:
+          type: string
+          description: >-
+            To generate outputs with forensic watermarking in Zencoder, you need to specify 2 outputs per video, an output A and B so that segments from each output can be intermixed in different sequences to produce a range of different watermarked "videos" for playback (for example: AABABBABA, ABBBABABA, BABAABBAA, etc.).
+          enum:
+            - A
+            - B
+        forensic_watermark_stub_mode:
+          type: boolean
+          description: |-
+            To be used for purposes of testing integrations that generate outputs with forensic watermarking in Zencoder. When set to true together with `forensic_watermark`, this flag causes visible watermarks to be created (to verify that forensic watermarking is being successfully added).
+
+            Once testing is complete, you will need to run the job again, omitting the `forensic_watermark_stub_mode` flag or setting it to `false`, to get outputs without the visible watermarks.
         package_filename:
           type: string
           description: The filename of a packaged output

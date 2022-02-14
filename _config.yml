@@ -1,0 +1,67 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Brightcove Zencoder Documentation
+email: training@brightcove.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Zencoder offers a fast and reliable transcoding service for video and audio files, as well as live streams. It can produce outputs for the web and a wide variety of devices, and can easily be integrated with your CMS and other applications.
+# baseurl: "" # the subpath of your site, e.g. /blog
+site_url: "https://zencoder.support.brightcove.com"
+site_domain: "zencoder.support.brightcove.com"
+
+# Build settings
+# theme: minima
+
+# local server (for "jekyll serve") will be localhost:{PORT number below}
+port: 8000
+
+
+product: Zencoder
+color: rgb(51, 51, 51)
+product_color: rgb(65, 196, 181)
+product_icon: "COVE004_Brightcove_Zencoder_Logo_RGB_K.svg"
+search_id: "017969773216783359937:chdh4nuxqmh"
+feedbackify_id: "15027"
+bing_custom_config_id: "f86fff2b-1515-45cb-9de7-dfc8200ad095"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+# plugins
+plugins:
+  - jekyll-last-modified-at
+
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
